@@ -5,221 +5,230 @@
     <meta name="description" content="The homepage of BINABOX 2025." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binabox Homepage</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="#">Binabox</a>
-        <ul>
+        <a href="#" class="logo">Binabox</a>
+        <ul class="navigation">
           <li><a href="#home">Home</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#catalog">Catalog</a></li>
           <li><a href="#contact_us">Contact Us</a></li>
         </ul>
+        <div class="nav-actions">
+          <a href="https://discord.com" target="_blank">Discord</a>
+          <a href="/login.html">Log In</a>
+        </div>
       </nav>
     </header>
 
     <main>
-      <h1>WITH BINABOX EXPLORE NFT COLLECTION</h1>
-      <p>We are the best way to check the rarity of NFT collection</p>
+      <h1>
+        WITH <span class="blue-word">BINABOX</span> EXPLORE NFT COLLECTION
+      </h1>
+      <p class="sub-heading">
+        We are the best way to check the rarity of NFT collection
+      </p>
+      <div class="stats-wrapper">
+        <dl class="stat-box">
+          <dt>Total Item</dt>
+          <dd class="secondary-text">2240+</dd>
+        </dl>
 
-      <dl>
-        <dt>Total Item</dt>
-        <dd>2240+</dd>
-      </dl>
-
-      <dl>
-        <dt>Profile Whitelist</dt>
-        <dd>1000+</dd>
-      </dl>
+        <dl class="stat-box">
+          <dt>Profiles Whitelisted</dt>
+          <dd class="secondary-text">1000+</dd>
+        </dl>
+      </div>
 
       <div>
-        <a href="#">Connect wallet</a>
-        <a href="#">Whitelist now</a>
+        <a href="#" class="btn-primary">Connect wallet</a>
+        <a href="#" class="btn-outline">Whitelist now</a>
       </div>
     </main>
 
-    <section>
-      <h2>Catalog</h2>
-      <a href="#">See all</a>
+    <section class="catalog">
+      <div class="catalog-header">
+        <div>
+          <span>📁</span>
+          <h2>Catalog</h2>
+        </div>
+        <div>
+          <a href="#" class="button-outline">See all</a>
+          <button class="button-outline">&#10094;</button>
+          <button class="button-outline">&#10095;</button>
+        </div>
+      </div>
 
-      <button>&larr;</button>
-      <button>&rarr;</button>
-
-      <article>
+      <article class="card">
         <h3>Echo of Bones</h3>
-        <p>$1990</p>
-        <p>New</p>
+        <p class="price">$1990</p>
+        <p class="status">New</p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Nyx the Watcher</h3>
-        <p>$299.99</p>
-        <p>New</p>
+        <p class="price">$299.99</p>
+        <p class="status">New</p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Blade of Silence</h3>
-        <p>$20</p>
-        <p>Sold out</p>
+        <p class="price">$20</p>
+        <p class="sold-out">Sold out</p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Data Core: Alpha</h3>
-        <p>$1,000,000</p>
-        <p>New</p>
+        <p class="price">$1,000,000</p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Phantom Console</h3>
-        <p>$199.5</p>
-        <p>New</p>
+        <p class="price">$199.5</p>
       </article>
     </section>
 
-    <section>
+    <section class="blog-section">
       <h2>Our blog</h2>
 
-      <article>
-        <!-- <img src="" alt=""/> -->
+      <article class="blog-post">
         <p>
-          <span>👤Nova Raven</span>
-          <time datetime="2022-12-06">📅06 Dec 2022</time>
+          <span class="author">👤Nova Raven</span>
+          <time datetime="2022-12-06" class="date">🗕06 Dec 2022</time>
         </p>
+        <span>NFT</span>
         <h3>Neural Drift</h3>
-        <p>
+        <p class="meta">
           I woke up inside the void. My body stayed in the past — only thoughts
           were allowed through.
         </p>
-        <a href="#">Read more</a>
+        <a href="#" class="read-more">Read more</a>
       </article>
 
-      <article>
-        <!-- <img src="" alt=""/> -->
+      <article class="blog-post">
         <p>
-          <span>👤Kolio Hull</span>
-          <time datetime="2022-12-06">📅06 Dec 2022</time>
+          <span class="author">👤Kolio Hull</span>
+          <time datetime="2022-12-06" class="date">🗕06 Dec 2022</time>
         </p>
         <span>DROP</span>
         <h3>Deadframe</h3>
-        <p>
+        <p class="meta">
           He just stood there, waiting. Not for a person — for a signal. Like
           the memory of the network.
         </p>
-        <a href="#">Read more</a>
+        <a href="#" class="read-more">Read more</a>
       </article>
 
-      <article>
-        <!-- <img src="" alt=""/> -->
+      <article class="blog-post">
         <p>
-          <span>👤Synthya Void</span>
-          <time datetime="2022-12-07">📅07 Dec 2022</time>
+          <span class="author">👤Synthya Void</span>
+          <time datetime="2022-12-07" class="date">🗕07 Dec 2022</time>
         </p>
+        <span>NFT</span>
         <h3>Glitch Panther</h3>
-        <p>
+        <p class="meta">
           Cats always knew more than they showed. Especially the ones that
           vanish into code.
         </p>
-        <a href="#">Read more</a>
+        <a href="#" class="read-more">Read more</a>
       </article>
 
-      <article>
-        <!-- <img src="" alt=""/> -->
+      <article class="blog-post">
         <p>
-          <span>👤Dr. Wex Omega</span>
-          <time datetime="2022-12-08">📅08 Dec 2022</time>
+          <span class="author">👤Dr. Wex Omega</span>
+          <time datetime="2022-12-08" class="date">🗕08 Dec 2022</time>
         </p>
         <span>RARE</span>
         <h3>Primal.exe</h3>
-        <p>
+        <p class="meta">
           We tried to resurrect the past. What we got was rage compressed into
           an algorithm.
         </p>
-        <a href="#">Read more</a>
+        <a href="#" class="read-more">Read more</a>
       </article>
 
-      <article>
-        <!-- <img src="" alt=""/> -->
+      <article class="blog-post">
         <p>
-          <span>👤Tony Nguyen</span>
-          <time datetime="2022-07-22">📅20 Jul 2022</time>
+          <span class="author">👤Tony Nguyen</span>
+          <time datetime="2022-07-22" class="date">🗕20 Jul 2022</time>
         </p>
         <span>NFT</span>
         <h3>White Protocol</h3>
-        <p>
+        <p class="meta">
           At first, it was just a signal — clean, white, hypnotic. We didn’t
           know it was alive.
         </p>
-        <a href="#">Read more</a>
+        <a href="#" class="read-more">Read more</a>
       </article>
 
-      <article>
-        <!-- <img src="" alt=""/> -->
+      <article class="blog-post">
         <p>
-          <span>👤Echo Zero</span>
-          <time datetime="2022-12-09">📅09 Dec 2022</time>
+          <span class="author">👤Echo Zero</span>
+          <time datetime="2022-12-09" class="date">🗕09 Dec 2022</time>
         </p>
         <span>ARTIFACT</span>
         <h3>Retrocore</h3>
-        <p>
+        <p class="meta">
           This console comes from a game no one remembers how to play. But it’s
           still powered on.
         </p>
-        <a href="#">Read more</a>
+        <a href="#" class="read-more">Read more</a>
       </article>
 
-      <a href="#">Read more</a>
+      <a href="#" class="read-more">Read more</a>
     </section>
 
     <section>
       <h2>About us</h2>
-
       <p>
         We craft digital artifacts for those who live between worlds. Our space
         is built for creators, collectors, and the quietly obsessed.
       </p>
-
       <ul class="no-bullets">
         <li>
           <h3>Crystal Clear Quality</h3>
-          <span>1</span>
+          <span class="card-number">1</span>
           <p>
             Every NFT we drop is razor-sharp, high-res, and glitch-free. Art
             that hits hard and stays clean.
           </p>
         </li>
-
         <li>
           <h3>Curated Depth</h3>
-          <span>2</span>
+          <span class="card-number">2</span>
           <p>
             Not just big — meaningful. Each piece tells a story, every
             collection builds a universe.
           </p>
         </li>
-
         <li>
           <h3>Rare Source Access</h3>
-          <span>3</span>
+          <span class="card-number">3</span>
           <p>
             Early drops. Backstage peeks. Our members don’t scroll — they
             unlock.
           </p>
         </li>
-
         <li>
           <h3>Living Network</h3>
-          <span>4</span>
+          <span class="card-number">4</span>
           <p>
             Our community isn’t a list — it’s a force. Artists, rebels,
             dreamers.
           </p>
         </li>
       </ul>
-
-      <a href="#">Read more</a>
+      <a href="#" class="read-more">Read more</a>
     </section>
 
     <section>
@@ -230,38 +239,38 @@
           <h3>Nova Riven</h3>
           <p>Creative Architect</p>
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#">Telegram</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
           </div>
         </li>
         <li>
           <h3>Echo Zaro</h3>
           <p>Tech Whisperer</p>
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
           </div>
         </li>
         <li>
           <h3>Kairo Null</h3>
           <p>Lore Engineer</p>
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#">Telegram</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
           </div>
         </li>
         <li>
           <h3>Dr. Wex Omega</h3>
           <p>Visual Disruptor</p>
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#">Telegram</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
           </div>
         </li>
         <li>
@@ -275,28 +284,27 @@
           <h3>Mirlo Drift</h3>
           <p>Community Catalyst</p>
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#">Telegram</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
           </div>
         </li>
         <li>
           <h3>Axon Rune</h3>
           <p>Security Ghost</p>
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#">Telegram</a>
+            <a href="#">X</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
           </div>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section class="faq-section">
       <h2>FAQs</h2>
-
       <details open>
         <summary>What are the NFTs?</summary>
         <p>
@@ -306,38 +314,24 @@
           No copies. No fakes. Just you and the chain.
         </p>
       </details>
-
       <details>
         <summary>How do I get NFTs?</summary>
-        <p>
-          You'll need a crypto wallet, some ETH, and access to our drops. We'll
-          guide you through it once you're in.
-        </p>
+        <p>""</p>
       </details>
-
       <details>
         <summary>How can we buy your NFTs?</summary>
-        <p>
-          You can buy directly through our site when drops are live. Just
-          connect your wallet and mint.
-        </p>
+        <p>""</p>
       </details>
-
       <details>
         <summary>Who are the team behind the project?</summary>
-        <p>
-          We're a global crew of artists, engineers, and dreamers. You can meet
-          the full team in the section above.
-        </p>
+        <p>""</p>
       </details>
     </section>
 
     <footer>
-      <!-- <img src="" alt=""/> -->
-
+      <a href="#" class="logo">Binabox</a>
       <p>We are the best way to check the rarity of NFT collection.</p>
-
-      <nav>
+      <nav class="footer">
         <h4>Navigation</h4>
         <ul>
           <li><a href="#">Home</a></li>
@@ -350,18 +344,16 @@
           <li><a href="#">Help Center</a></li>
         </ul>
       </nav>
-
       <div>
         <p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Telegram</a>
+          <a href="#" target="_blank">Youtube</a>
+          <a href="#" target="_blank">TikTok</a>
+          <a href="#" target="_blank">Discord</a>
         </p>
       </div>
-
       <div>
         <p>&copy; BINABOX 2025 – All rights reserved</p>
       </div>
