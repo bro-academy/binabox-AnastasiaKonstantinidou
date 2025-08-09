@@ -7,6 +7,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
   background-color: #0d0d15;
   background-image: radial-gradient(
     circle at top left,
@@ -41,6 +43,7 @@ body {
   letter-spacing: -0.5px;
   color: #f8f7ff;
   text-align: center;
+  font-weight: 400;
 }
 
 .h2 {
@@ -60,43 +63,36 @@ body {
 }
 
 .h3 {
-  color: #f8f7ff;
   font-weight: 400;
+  color: #f8f7ff;
   font-size: 28px;
   line-height: 36px;
-  letter-spacing: 0px;
 }
 
 .h4 {
-  color: #f8f7ff;
   font-weight: 400;
+  color: #f8f7ff;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0px;
 }
 
 .h4-blog-page {
-  color: #f5f8fb;
   font-weight: 400;
+  color: #f5f8fb;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0px;
 }
 
 .h5 {
   color: #f8f7ff;
-  font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  letter-spacing: 0px;
 }
 
 .h5-blog-paragraph {
   color: #f8f7ff;
-  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
 }
 
 /* SUBHEADING (POPPINS MEDIUM)*/
@@ -119,37 +115,35 @@ body {
   font-weight: 500;
   font-size: 28px;
   line-height: 40px;
-  letter-spacing: 0px;
 }
 
 .s4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0px;
 }
 
 .s5 {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 0px;
   color: #eff5fad1;
+}
+
+.s5-paragraph {
+  color: #d9d9d9;
 }
 
 .s5-navigation {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: 0px;
   color: #f5f8fb;
 }
 
 .s7 {
-  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #f5f8fb;
   text-align: center;
 }
@@ -158,7 +152,6 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0px;
   color: #d9d9d9;
   text-align: center;
 }
@@ -167,7 +160,6 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #d9d9d9;
   text-align: center;
 }
@@ -175,12 +167,10 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   text-align: right;
   color: #0265dc;
   border: 2px solid #f5f8fb;
   background: #f5f8fb;
-  border-radius: 2px;
   padding: 2px 6px;
 }
 
@@ -188,7 +178,6 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
   color: #d9d9d9;
   text-align: center;
 }
@@ -197,7 +186,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #f5f8fb;
   text-align: center;
 }
@@ -207,7 +195,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0;
   color: #eff5fad1;
 }
 
@@ -215,7 +202,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   vertical-align: bottom;
   color: #eff5fad1;
 }
@@ -224,21 +210,18 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0;
 }
 
 .body-p4-regular {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0;
 }
 
 .body-p5-regular {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
-  letter-spacing: 0;
 }
 
 /* Medium Weights */
@@ -246,58 +229,55 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0;
 }
 
 .body-p2-medium {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0;
 }
 
 .body-p3-medium {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0;
 }
 
 .body-p4-medium {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0;
 }
 
 .body-p5-medium {
   font-weight: 500;
   font-size: 11px;
   line-height: 16px;
-  letter-spacing: 0;
 }
 
 .paragraph-font {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   color: #f5f8fb;
   text-align: center;
+}
+
+.paragraph-font a {
+  text-decoration: none;
+  color: #0265dc;
 }
 
 .link-l1 {
   font-weight: 600; /* Semibold */
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0;
 }
 
 .link-l2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   text-align: center;
   vertical-align: middle;
   color: #f5f8fb;
@@ -310,23 +290,19 @@ body {
 
 .link-l3 {
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0;
 }
 
 .link-l4 {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0;
 }
 
 .link-l5 {
   font-weight: 600;
   font-size: 11px;
   line-height: 16px;
-  letter-spacing: 0;
 }
 
 /* FONTS END */
@@ -353,7 +329,6 @@ nav {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   text-align: center;
   text-decoration: none;
   /* transition: all 0.2s ease; enable smooth animation */
@@ -368,22 +343,23 @@ nav {
 .nav-actions {
   display: flex;
   gap: 10px;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
 }
 
 .nav-actions a {
   color: #f5f8fb;
   text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 10px 10px;
+  border-radius: 2px;
+  gap: 8;
+
   transition: background-color 0.2s ease, color 0.2s ease;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
+  width: 150px;
 }
 
 .nav-actions a:first-child {
@@ -410,7 +386,6 @@ nav {
 
 .secondary-text {
   color: #f5f8fb;
-  font-weight: 400;
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
@@ -436,21 +411,17 @@ nav {
 
 .stat-box dd {
   letter-spacing: -0.5px;
-  font-size: 48px;
-  font-weight: 900;
   color: #f5f8fb;
-  text-shadow: 0 0 15px rgba(225, 225, 225, 0.6);
+  text-shadow: 0px 4px 13px #ffffff66;
 }
 
 /* Buttons */
 .btn-primary,
 .btn-outline {
   padding: 10px 20px;
-  border-radius: 2px;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0;
   text-decoration: none;
   display: inline-block;
   transition: all 0.2s ease;
@@ -463,7 +434,6 @@ nav {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0;
   text-decoration: none;
   display: inline-block;
   transition: all 0.2s ease;
@@ -475,7 +445,6 @@ nav {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0;
   padding: 10px 20px;
   border-radius: 2px;
   text-decoration: none;
@@ -513,18 +482,42 @@ nav {
 }
 
 /* Secondary Outline Buttons */
-.button-outline,
+
 .read-more {
   background-color: transparent;
   color: #f5f8fb;
   border: 2px solid #d0d7fb2b;
 }
 
-.button-outline:hover,
+.button-outline {
+  background-color: transparent;
+  color: #f5f8fb;
+  border: 2px solid #d0d7fb2b;
+}
+
+.arrow-button-blue {
+  background-color: #0265dc;
+  color: #0d0d15;
+}
+
 .read-more:hover {
   background-color: #0265dc;
   border-color: #0265dc;
   color: #f5f8fb;
+  cursor: pointer;
+}
+
+.arrow-button-blue:hover {
+  background-color: #0265dc;
+  border-color: #0265dc;
+  color: #0d0d15;
+  cursor: pointer;
+}
+
+.button-outline:hover {
+  background-color: #0265dc;
+  border-color: #0265dc;
+  color: #0d0d15;
   cursor: pointer;
 }
 
@@ -540,7 +533,6 @@ nav {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   text-align: center;
   padding: 20px;
   border-radius: 6px;
@@ -548,9 +540,7 @@ nav {
 
 .author {
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #eff5fad1;
   padding: 20px;
   border-radius: 6px;
@@ -558,9 +548,7 @@ nav {
 
 .date {
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #eff5fad1;
 }
 
@@ -570,7 +558,7 @@ nav {
   font-size: 64px;
   font-weight: 900;
   color: transparent;
-  -webkit-text-stroke: 1px #0265dc;
+  -webkit-text-stroke: 2px #0265dc;
   z-index: 0;
   opacity: 0.4;
 }
@@ -589,13 +577,10 @@ nav {
 .status {
   color: #0265dc;
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   background-color: #f5f8fb;
   display: inline-block;
-  padding: 2px 6px;
-  border-radius: 4px;
+  padding: 8px 10px;
 }
 
 .card .price {
@@ -619,7 +604,6 @@ nav {
 
 .price {
   color: #f5f8fb;
-  font-weight: 400;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
@@ -627,13 +611,10 @@ nav {
 
 .sold-out {
   display: inline-block;
-  padding: 2px 6px;
-  border-radius: 4px;
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   text-align: right;
+  padding: 8px 10px;
 }
 
 .sold-out {
@@ -675,7 +656,6 @@ footer a:visited {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0;
   color: #f5f8fb;
   text-decoration: none;
 }
@@ -727,7 +707,6 @@ footer a:hover {
 
 .breadcrumb li {
   display: inline;
-  font-size: 14px;
 }
 
 .breadcrumb li::after {
@@ -759,9 +738,7 @@ footer a:hover {
   padding: 0;
   color: #f8f7ff;
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
 
   /* FLEX END */
 }
@@ -776,10 +753,8 @@ footer a:hover {
 
 .blog-link a {
   font-weight: 600;
-  font-size: 14px;
   color: #f5f8fb;
   line-height: 20px;
-  letter-spacing: 0px;
   vertical-align: middle;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -797,14 +772,12 @@ footer a:hover {
   transition: all 0.2s ease;
   text-decoration: none;
 
-  padding: 6px 12px;
-  border-radius: 2px;
+  padding: 10px 10px;
   display: inline-block;
 
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
 
   text-align: center;
 }
@@ -824,9 +797,7 @@ footer a:hover {
   gap: 12px;
   color: #eff5fad1;
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
 
   text-align: center;
 }
@@ -836,7 +807,6 @@ footer a:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
 }
 
 .blog-text li {
@@ -858,7 +828,6 @@ footer a:hover {
 
 .blog-blockquote p {
   text-align: center;
-  font-weight: 400;
   color: #f8f7ff;
   font-size: 28px;
   line-height: 36px;
@@ -869,9 +838,7 @@ footer a:hover {
   font-style: normal;
   font-weight: 600;
   color: #f8f7ff;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
 }
 
 .figures-list {
@@ -898,13 +865,8 @@ footer a:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   color: #f8f7ff;
   text-align: center;
-}
-
-.blog-paragraph h2 {
-  font-size: 20px;
 }
 
 .blog-paragraph h3 {
@@ -936,7 +898,7 @@ footer a:hover {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  letter-spacing: 0px;
+  text-decoration: none;
 }
 
 .tag-buttons {
@@ -947,7 +909,6 @@ footer a:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
   color: #f8f7ff;
   text-align: center;
 }
@@ -956,7 +917,6 @@ footer a:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0px;
 }
 
 .tag-buttons button,
@@ -969,14 +929,12 @@ footer a:hover {
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 600;
-  font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0px;
   text-align: center;
   vertical-align: middle;
 }
 
-.tag-buttons button:hover,
+.tag-buttons-icons .tag-buttons button:hover,
 .tag-buttons a:hover {
   background-color: transparent;
   border: 2px solid #f8f7ff;
@@ -1014,4 +972,8 @@ footer a:hover {
 .highlight-score {
   opacity: 0.8;
   color: #eff5fad1;
+}
+
+.social-media-tags {
+  font-size: 0px;
 }
