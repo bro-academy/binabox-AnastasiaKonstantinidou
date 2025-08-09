@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binabox Blog</title>
     <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="blog-body">
     <header class="header-blog">
       <nav>
-        <a href="#" class="logo">Binabox</a>
+        <a href="#" class="logo">
+          <!-- <img src="" alt="Binabox" /> -->
+        </a>
         <ul class="navigation">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#catalog">Catalog</a></li>
-          <li><a href="#contact_us">Contact Us</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Catalog</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
         <div class="nav-actions">
           <a href="https://discord.com" target="_blank">Discord</a>
@@ -32,7 +40,7 @@
     </header>
 
     <section class="breadcrumb">
-      <h1>Our blog</h1>
+      <h1 class="h1">Our blog</h1>
       <nav aria-label="breadcrumb">
         <ol class="navigation-breadcrumb">
           <li><a href="/">Home</a></li>
@@ -48,7 +56,7 @@
 
     <aside>
       <section class="blog-link">
-        <h2>Categories</h2>
+        <h2 class="h4-blog-page">Categories</h2>
         <ul>
           <li><a href="#">Our blog (12)</a></li>
           <li><a href="#">Metaverse (24)</a></li>
@@ -61,8 +69,8 @@
       </section>
 
       <section class="blog-link blog-tags">
-        <h2>Tag</h2>
-        <ul>
+        <h2 class="h4-blog-page">Tag</h2>
+        <ul class="s9">
           <li><a href="#">NFT</a></li>
           <li><a href="#">ICO</a></li>
           <li><a href="#">Robot</a></li>
@@ -82,15 +90,15 @@
             encoded rage.
           </figcaption>
         </figure>
-        <h2>The Basilisks NFT</h2>
+        <h2 class="h2-blog-page">The Basilisks NFT</h2>
         <a href="#" class="blog-button">Gaming</a>
         <div class="blog-meta">
           <span>👤 Tony Nguyen</span>
           <time datetime="2022-06-06">📅 06 Jun 2022</time>
         </div>
 
-        <div class="blog-paragraph">
-          <p>
+        <div>
+          <p class="h5-blog-paragraph">
             <span>Basilisks</span> aren’t just creatures — they’re digital apex
             predators.<br />
             Forged on the Ethereum chain and raised in a metaverse colosseum,
@@ -162,15 +170,17 @@
         </ul>
 
         <section class="blog-paragraph">
-          <h2>NFTs are digital assets that represent real-world objects</h2>
-          <p>
+          <h2 class="h3">
+            NFTs are digital assets that represent real-world objects
+          </h2>
+          <p class="h5-blog-paragraph">
             Setting up your avatar and personalizing your nickname on Binance is
             quick and easy. Users can go to binance.com under Dashboard >
             Settings > My Profile > Avatar and Nickname. For those of you who
             own NFT assets, you can select the NFT you want to use from your
             collection as your avatar to personalize your profile.
           </p>
-          <p>
+          <p class="h5-blog-paragraph">
             Alternatively, if you're on nft.binance.com, go to User Center >
             Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
             to the main site. Binance NFT Creators have the option of setting
@@ -181,7 +191,7 @@
         </section>
 
         <section class="blog-steps">
-          <h3>NFT Avatar Generators</h3>
+          <h3 class="h3">NFT Avatar Generators</h3>
           <p>Looking to join the pack?</p>
           <p>
             Use the <a href="#">NFT Avatar Generator</a> to craft your own beast
@@ -211,13 +221,17 @@
     </main>
 
     <footer>
-      <div class="footer-header">
-        <a href="#" class="logo">Binabox</a>
-        <p>We are the best way to check the rarity of NFT collections.</p>
+      <div>
+        <a href="#">
+          <!-- <img src="" alt="Binabox" /> -->
+        </a>
+        <p class="s7">
+          We are the best way to check the rarity of NFT collections.
+        </p>
       </div>
 
       <nav class="footer">
-        <h4>Navigation</h4>
+        <h4 class="s5-navigation">Navigation</h4>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Blog</a></li>
@@ -242,7 +256,7 @@
       </div>
 
       <div>
-        <p>&copy; BINABOX 2025 – All rights reserved</p>
+        <p class="copyright">&copy; BINABOX 2025 – All rights reserved</p>
       </div>
     </footer>
   </body>
