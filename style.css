@@ -4,8 +4,37 @@
 .header-font {
   background-color: #0d0d15;
 }
-.h1 {
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d0d15;
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(2, 101, 220, 0.4) 0%,
+    rgba(2, 101, 220, 0) 70%
+  );
+
+  background-repeat: no-repeat;
+  background-size: 600px 600px;
+
+  text-align: center;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h2-blog-page,
+.h4-blog-page,
+.price,
+.secondary-text,
+.stat-box dd,
+.blog-blockquote p {
   font-family: "Bakbak One", sans-serif;
+}
+
+.h1 {
   font-weight: 400;
   font-size: 52px;
   line-height: 62px;
@@ -15,7 +44,6 @@
 }
 
 .h2 {
-  font-family: "Bakbak One", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
@@ -24,7 +52,6 @@
 }
 
 .h2-blog-page {
-  font-family: "Bakbak One", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
@@ -34,7 +61,6 @@
 
 .h3 {
   color: #f8f7ff;
-  font-family: "Bakbak One", sans-serif;
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
@@ -43,7 +69,6 @@
 
 .h4 {
   color: #f8f7ff;
-  font-family: "Bakbak One", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
@@ -52,7 +77,6 @@
 
 .h4-blog-page {
   color: #f5f8fb;
-  font-family: "Bakbak One", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
@@ -61,7 +85,6 @@
 
 .h5 {
   color: #f8f7ff;
-  font-family: "Bakbak One", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -70,56 +93,44 @@
 
 .h5-blog-paragraph {
   color: #f8f7ff;
-  font-family: "poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0px;
-  color: #f8f7ff;
 }
 
 /* SUBHEADING (POPPINS MEDIUM)*/
 
 .s1 {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
 }
 
 .s2 {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
 }
 
 .s3 {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 28px;
   line-height: 40px;
   letter-spacing: 0px;
 }
 
 .s4 {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0px;
 }
 
 .s5 {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0px;
@@ -127,9 +138,7 @@
 }
 
 .s5-navigation {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0px;
@@ -137,7 +146,6 @@
 }
 
 .s7 {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -147,7 +155,6 @@
 }
 
 .s8 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -157,7 +164,6 @@
 }
 
 .s9 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -166,7 +172,6 @@
   text-align: center;
 }
 .s9-tag {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -180,7 +185,6 @@
 }
 
 .s10 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -189,18 +193,7 @@
   text-align: center;
 }
 
-.s11 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0px;
-  color: #ffffff;
-  text-align: center;
-}
-
 .copyright {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -211,7 +204,6 @@
 
 /* Regular Weights */
 .body-p1-regular {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -220,7 +212,6 @@
 }
 
 .body-p2-regular {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -230,7 +221,6 @@
 }
 
 .body-p3-regular {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -238,7 +228,6 @@
 }
 
 .body-p4-regular {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -246,7 +235,6 @@
 }
 
 .body-p5-regular {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
@@ -255,7 +243,6 @@
 
 /* Medium Weights */
 .body-p1-medium {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
@@ -263,7 +250,6 @@
 }
 
 .body-p2-medium {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -271,7 +257,6 @@
 }
 
 .body-p3-medium {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -279,7 +264,6 @@
 }
 
 .body-p4-medium {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -287,7 +271,6 @@
 }
 
 .body-p5-medium {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 11px;
   line-height: 16px;
@@ -295,7 +278,6 @@
 }
 
 .paragraph-font {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -305,7 +287,6 @@
 }
 
 .link-l1 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600; /* Semibold */
   font-size: 18px;
   line-height: 28px;
@@ -313,7 +294,6 @@
 }
 
 .link-l2 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -329,7 +309,6 @@
 }
 
 .link-l3 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -337,7 +316,6 @@
 }
 
 .link-l4 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -345,7 +323,6 @@
 }
 
 .link-l5 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 11px;
   line-height: 16px;
@@ -353,21 +330,6 @@
 }
 
 /* FONTS END */
-
-body {
-  font-family: "Bakbak One", Arial, sans-serif;
-  background-color: #0d0d15;
-  background-image: radial-gradient(
-    circle at top left,
-    rgba(2, 101, 220, 0.4) 0%,
-    rgba(2, 101, 220, 0) 70%
-  );
-
-  background-repeat: no-repeat;
-  background-size: 600px 600px;
-
-  text-align: center;
-}
 
 /* NAVBAR LAYOUT */
 nav {
@@ -388,7 +350,6 @@ nav {
 
 .navigation li a {
   color: #f5f8fb;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -407,7 +368,6 @@ nav {
 .nav-actions {
   display: flex;
   gap: 10px;
-  font-family: "Poppins", sans-serif;
   font-weight: 600px;
   font-size: 18px;
   line-height: 28px;
@@ -420,8 +380,6 @@ nav {
   padding: 6px 12px;
   border-radius: 4px;
   transition: background-color 0.2s ease, color 0.2s ease;
-
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -452,7 +410,6 @@ nav {
 
 .secondary-text {
   color: #f5f8fb;
-  font-family: "Bakbak One", Arial, sans-serif;
   font-weight: 400;
   font-size: 52px;
   line-height: 62px;
@@ -478,18 +435,16 @@ nav {
 }
 
 .stat-box dd {
-  font-family: "Bakbak One", sans-serif;
   letter-spacing: -0.5px;
   font-size: 48px;
   font-weight: 900;
-  color: #fff;
+  color: #f5f8fb;
   text-shadow: 0 0 15px rgba(225, 225, 225, 0.6);
 }
 
 /* Buttons */
 .btn-primary,
 .btn-outline {
-  font-family: "Poppins", sans-serif;
   padding: 10px 20px;
   border-radius: 2px;
   font-weight: 600;
@@ -503,7 +458,6 @@ nav {
 }
 
 .read-more {
-  font-family: "Poppins", sans-serif;
   padding: 10px 20px;
   border-radius: 2px;
   font-weight: 600;
@@ -518,7 +472,6 @@ nav {
 }
 
 .button-outline {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -549,7 +502,7 @@ nav {
 .btn-outline {
   background-color: transparent;
   color: #f5f8fb;
-  border: 1px solid #d0d7fb2b;
+  border: 2px solid #d0d7fb2b;
 }
 
 .btn-outline:hover {
@@ -584,7 +537,6 @@ nav {
 
 .meta {
   color: #eff5fad1;
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -592,11 +544,9 @@ nav {
   text-align: center;
   padding: 20px;
   border-radius: 6px;
-  color: #f5f8fb;
 }
 
 .author {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -607,7 +557,6 @@ nav {
 }
 
 .date {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -639,7 +588,6 @@ nav {
 
 .status {
   color: #0265dc;
-  font-family: "poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -670,7 +618,6 @@ nav {
 }
 
 .price {
-  font-family: "Bakbak One", sans-serif;
   color: #f5f8fb;
   font-weight: 400;
   font-size: 36px;
@@ -682,7 +629,6 @@ nav {
   display: inline-block;
   padding: 2px 6px;
   border-radius: 4px;
-  font-family: "poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -701,7 +647,6 @@ details {
   border: 1px solid #2c2c35;
   border-radius: 6px;
   padding: 16px;
-
   color: #f5f8fb;
 }
 
@@ -727,7 +672,6 @@ nav.footer {
 
 footer a,
 footer a:visited {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -813,7 +757,6 @@ footer a:hover {
   gap: 20px; /* space between flex items */
   list-style: none;
   padding: 0;
-  font-family: "poppins", sans-serif;
   color: #f8f7ff;
   font-weight: 600;
   font-size: 14px;
@@ -832,7 +775,6 @@ footer a:hover {
 }
 
 .blog-link a {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #f5f8fb;
@@ -859,7 +801,6 @@ footer a:hover {
   border-radius: 2px;
   display: inline-block;
 
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -882,7 +823,6 @@ footer a:hover {
   justify-content: center;
   gap: 12px;
   color: #eff5fad1;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -893,9 +833,7 @@ footer a:hover {
 
 .figure {
   color: #f8f7ff;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: Medium;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0px;
@@ -904,7 +842,6 @@ footer a:hover {
 .blog-text li {
   font-weight: 400;
   color: #f8f7ff;
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.5px;
@@ -913,7 +850,6 @@ footer a:hover {
 .blog-list li {
   font-weight: 400;
   color: #f8f7ff;
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.5px;
@@ -924,7 +860,6 @@ footer a:hover {
   text-align: center;
   font-weight: 400;
   color: #f8f7ff;
-  font-family: "Bakbak One", sans-serif;
   font-size: 28px;
   line-height: 36px;
   letter-spacing: -0.5px;
@@ -934,7 +869,6 @@ footer a:hover {
   font-style: normal;
   font-weight: 600;
   color: #f8f7ff;
-  font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0px;
@@ -961,7 +895,6 @@ footer a:hover {
 }
 
 .figcaption {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -1000,7 +933,6 @@ footer a:hover {
 .blog-steps p {
   color: #f8f7ff;
   line-height: 1.4; /* adjust text spacing */
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -1012,7 +944,6 @@ footer a:hover {
   align-items: center;
   gap: 0.5rem;
 
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1022,7 +953,6 @@ footer a:hover {
 }
 
 .tag-buttons p {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1038,7 +968,6 @@ footer a:hover {
   border-radius: 4px;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
