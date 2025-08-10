@@ -830,11 +830,20 @@ footer a:hover {
 }
 
 .blog-blockquote p {
-  text-align: center;
   color: #f8f7ff;
   font-size: 28px;
   line-height: 36px;
   letter-spacing: -0.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blog-blockquote {
+  padding: 16px;
+  gap: 8px;
+  border-radius: 16px;
+  background-color: #002754;
 }
 
 .no-italic {
