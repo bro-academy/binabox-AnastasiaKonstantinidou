@@ -2,39 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Blog of BINABOX 2025." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binabox Blog</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <header>
+  <body class="blog-body">
+    <header class="header-blog">
       <nav>
-        <a href="#">Binabox</a>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#catalog">Catalog</a></li>
-          <li><a href="#contact_us">Contact Us</a></li>
+        <a href="#" class="logo">
+          <!-- <img src="" alt="Binabox" /> -->
+        </a>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Catalog</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
+        <div class="nav-actions">
+          <a href="https://discord.com" target="_blank">Discord</a>
+          <a href="/login.html">Log In</a>
+        </div>
       </nav>
     </header>
 
-    <nav aria-label="breadcrumb">
-      <h1>Our blog</h1>
-      <ol>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Our blog</a></li>
-        <li>
-          <a href="/blog/the-basilisks" aria-current="page"
-            >The Basilisks NFT</a
-          >
-        </li>
-      </ol>
-    </nav>
+    <section class="breadcrumb">
+      <h1 class="h1">Our blog</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="navigation-breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Our blog</a></li>
+          <li>
+            <a href="/blog/the-basilisks" aria-current="page"
+              >The Basilisks NFT</a
+            >
+          </li>
+        </ol>
+      </nav>
+    </section>
 
     <aside>
-      <section>
-        <h2>Categories</h2>
+      <section class="blog-link">
+        <h2 class="h4-blog-page">Categories</h2>
         <ul>
           <li><a href="#">Our blog (12)</a></li>
           <li><a href="#">Metaverse (24)</a></li>
@@ -46,9 +68,9 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Tag</h2>
-        <ul>
+      <section class="blog-link blog-tags">
+        <h2 class="h4-blog-page">Tag</h2>
+        <ul class="s9">
           <li><a href="#">NFT</a></li>
           <li><a href="#">ICO</a></li>
           <li><a href="#">Robot</a></li>
@@ -61,26 +83,31 @@
 
     <main>
       <article>
-        <figure>
+        <figure class="figure">
           <!-- <img src="" alt="" /> -->
           <figcaption>
             A Basilisk enters the arena — its emerald scales shimmer with
             encoded rage.
           </figcaption>
         </figure>
-        <h2>The Basilisks NFT</h2>
-        <a href="#">Gaming</a>
-        <span>👤 Tony Nguyen</span>
-        <time datetime="2022-06-06">📅 06 Jun 2022</time>
+        <h2 class="h2-blog-page">The Basilisks NFT</h2>
+        <a href="#" class="blog-button">Gaming</a>
+        <div class="blog-meta">
+          <span>👤 Tony Nguyen</span>
+          <time datetime="2022-06-06">📅 06 Jun 2022</time>
+        </div>
 
-        <p>
-          <span>Basilisks</span> aren’t just creatures — they’re digital apex
-          predators. Forged on the Ethereum chain and raised in a metaverse
-          colosseum, they live to dominate, duel, and devour. Every one of them
-          is an NFT with unique DNA, traits, and bloodlust.
-        </p>
+        <div>
+          <p class="h5-blog-paragraph">
+            <span>Basilisks</span> aren’t just creatures — they’re digital apex
+            predators.<br />
+            Forged on the Ethereum chain and raised in a metaverse colosseum,
+            they live to dominate, duel, and devour.<br />
+            Every one of them is an NFT with unique DNA, traits, and bloodlust.
+          </p>
+        </div>
 
-        <ul>
+        <ul class="blog-text">
           <li>
             In this game, your Basilisk is your warrior. You breed it. You name
             it. You train it. And when you’re ready, you send it into the arena
@@ -99,7 +126,7 @@
           </li>
         </ul>
 
-        <div>
+        <div class="blog-list">
           <ul>
             <li>Unique DNA structure</li>
             <li>PvP-enabled arenas</li>
@@ -108,21 +135,24 @@
           </ul>
         </div>
 
-        <blockquote>
+        <blockquote class="blog-blockquote">
           <p>
             “The first huge metaverse arena to arrange live sports, hang out and
             even make bets and wagers”
           </p>
           <footer>
-            <cite class="no-italic">✨ 8.5/10 Markout Corporation</cite>
+            <cite class="no-italic"
+              >✨ <span class="highlight-score">8.5/10</span> Markout
+              Corporation</cite
+            >
           </footer>
         </blockquote>
 
-        <ul>
+        <ul class="figures-list">
           <li>
             <figure>
               <!-- <img src="" alt="" /> -->
-              <figcaption>
+              <figcaption class="figcaption">
                 Close-up of Gen-3 Basilisk. Eyes trained by code.
               </figcaption>
             </figure>
@@ -131,7 +161,7 @@
           <li>
             <figure>
               <!-- <img src="" alt="" /> -->
-              <figcaption>
+              <figcaption class="figcaption">
                 A bonded Basilisk with its summoner. Loyalty is minted — not
                 earned.
               </figcaption>
@@ -139,16 +169,18 @@
           </li>
         </ul>
 
-        <section>
-          <h2>NFTs are digital assets that represent real-world objects</h2>
-          <p>
+        <section class="blog-paragraph">
+          <h2 class="h3">
+            NFTs are digital assets that represent real-world objects
+          </h2>
+          <p class="h5-blog-paragraph">
             Setting up your avatar and personalizing your nickname on Binance is
             quick and easy. Users can go to binance.com under Dashboard >
             Settings > My Profile > Avatar and Nickname. For those of you who
             own NFT assets, you can select the NFT you want to use from your
             collection as your avatar to personalize your profile.
           </p>
-          <p>
+          <p class="h5-blog-paragraph">
             Alternatively, if you're on nft.binance.com, go to User Center >
             Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
             to the main site. Binance NFT Creators have the option of setting
@@ -158,8 +190,8 @@
           </p>
         </section>
 
-        <section>
-          <h3>NFT Avatar Generators</h3>
+        <section class="blog-steps">
+          <h3 class="h3">NFT Avatar Generators</h3>
           <p>Looking to join the pack?</p>
           <p>
             Use the <a href="#">NFT Avatar Generator</a> to craft your own beast
@@ -167,29 +199,55 @@
           </p>
           <p>You name it. You own it. You unleash it.</p>
 
-          <div>
-            <p>Tags:</p>
-            <button type="button">NFT</button>
-            <button type="button">Metaverse</button>
-            <button type="button">Crypto</button>
-          </div>
+          <div class="blog-steps-footer">
+            <div class="tag-buttons">
+              <p>Tags:</p>
+              <button type="button">NFT</button>
+              <button type="button">Metaverse</button>
+              <button type="button">Crypto</button>
+            </div>
 
-          <div>
-            <p>Share:</p>
-            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <div class="tag-buttons">
+              <p>Share:</p>
+              <a
+                href="#"
+                class="social-media-tags"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+              <a
+                href="#"
+                class="social-media-tags"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+              <a
+                href="#"
+                class="social-media-tags"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </div>
           </div>
         </section>
       </article>
     </main>
 
     <footer>
-      <!-- <img src="" alt="" /> -->
-      <p>We are the best way to check the rarity of NFT collections.</p>
+      <div>
+        <a href="#">
+          <!-- <img src="" alt="Binabox" /> -->
+        </a>
+        <p class="s7">
+          We are the best way to check the rarity of NFT collections.
+        </p>
+      </div>
 
-      <nav>
-        <h4>Navigation</h4>
+      <nav class="footer">
+        <h4 class="s5-navigation">Navigation</h4>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Blog</a></li>
@@ -204,17 +262,53 @@
 
       <div>
         <p>
-          <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a
+            href="#"
+            class="social-media-tags"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+          <a
+            href="#"
+            class="social-media-tags"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            class="social-media-tags"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Telegram</a
+          >
+          <a
+            href="#"
+            class="social-media-tags"
+            target="_blank"
+            rel="noopener noreferrer"
+            >YouTube</a
+          >
+          <a
+            href="#"
+            class="social-media-tags"
+            target="_blank"
+            rel="noopener noreferrer"
+            >TikTok</a
+          >
+          <a
+            href="#"
+            class="social-media-tags"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Discord</a
+          >
         </p>
       </div>
 
       <div>
-        <p>&copy; BINABOX 2025 – All rights reserved</p>
+        <p class="copyright">&copy; BINABOX 2025 – All rights reserved</p>
       </div>
     </footer>
   </body>
