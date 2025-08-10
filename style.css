@@ -131,6 +131,9 @@ body {
 }
 
 .s5-paragraph {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
   color: #d9d9d9;
 }
 
@@ -914,9 +917,8 @@ footer a:hover {
 }
 
 .tag-buttons p {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
 }
 
 .tag-buttons button,
@@ -925,7 +927,6 @@ footer a:hover {
   color: #f8f7ff;
   background-color: transparent;
   border: 2px solid #d0d7fb2b;
-  border-radius: 4px;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 600;
@@ -934,7 +935,7 @@ footer a:hover {
   vertical-align: middle;
 }
 
-.tag-buttons-icons .tag-buttons button:hover,
+.tag-buttons button:hover,
 .tag-buttons a:hover {
   background-color: transparent;
   border: 2px solid #f8f7ff;
@@ -956,11 +957,8 @@ footer a:hover {
   border: 2px solid #d0d7fb2b;
   color: #f5f8fb;
   text-decoration: none;
-  font-weight: 500;
   background-color: transparent;
   transition: all 0.2s ease;
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 .blog-tags a:hover {
@@ -975,5 +973,8 @@ footer a:hover {
 }
 
 .social-media-tags {
+  font-size: 0px;
+}
+.social-media-tags a {
   font-size: 0px;
 }
