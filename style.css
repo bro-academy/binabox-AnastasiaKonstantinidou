@@ -31,8 +31,10 @@ body {
 .article-title--md,
 .blog-paragraph__title,
 .article-title--sm,
+.team__name--sm,
 .content-carousel__text,
 .article__title,
+.card__title--md,
 .sidebar-widget__title,
 .card__price,
 .stats-number,
@@ -65,7 +67,8 @@ body {
   line-height: 36px;
 }
 
-.article-title--sm {
+.article-title--sm,
+.team__name--sm {
   font-weight: 400;
   color: #f8f7ff;
   font-size: 24px;
@@ -92,6 +95,12 @@ body {
   line-height: 28px;
 }
 
+.blog-paragraph__text {
+  color: #f8f7ff;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .article-section__text {
   font-weight: 500;
   font-size: 20px;
@@ -104,6 +113,14 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #eff5fad1;
+}
+
+.card__title--md {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #f8f7ff;
 }
 
 .breadcrumb__paragraph {
@@ -261,7 +278,7 @@ header {
   vertical-align: bottom;
 }
 
-.breadcrumb__title-highlight {
+.breadcrumb__title--highlight {
   color: #0265dc;
 }
 
