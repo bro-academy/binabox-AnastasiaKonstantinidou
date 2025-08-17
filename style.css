@@ -31,15 +31,15 @@ body {
 }
 
 .breadcrumb__title,
-.article-title,
+.article__title,
 .team__title,
 .about__title,
 .banner__title,
-.article-title--md,
+.article__title--md,
 .about__title--md,
 .blog-paragraph__title,
 .article__subtitle,
-.article-title--sm,
+.article__title--sm,
 .about__title--sm,
 .team__name,
 .product__title,
@@ -66,7 +66,7 @@ body {
   text-align: center;
 }
 
-.article-title--md,
+.article__title--md,
 .about__title--md,
 .team__title {
   font-weight: 400;
@@ -83,7 +83,7 @@ body {
   line-height: 36px;
 }
 
-.article-title--sm,
+.article__title--sm,
 .about__title--sm,
 .team__name {
   font-weight: 400;
