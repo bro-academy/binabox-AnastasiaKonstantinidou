@@ -20,51 +20,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="page page--home">
-    <header class="site-header">
-      <a href="#" class="site-header__logo">
-        <img src="" alt="Binabox" class="site-header__logo-image" />
+  <body class="body body--blog">
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img src="#" alt="Binabox" />
       </a>
 
-      <nav class="site-header__menu">
-        <ul class="site-header__list">
-          <li class="site-header__item">
-            <a class="site-header__link" href="index.html">Home</a>
-          </li>
-          <li class="site-header__item">
-            <a
-              class="site-header__link site-header__link--active"
-              href="blog.html"
-              >Blog</a
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link header__link--active" href="index.html"
+              >Home</a
             >
           </li>
-          <li class="site-header__item">
-            <a class="site-header__link" href="#">Catalog</a>
+          <li class="header__item">
+            <a class="header__link" href="blog.html">Blog</a>
           </li>
-          <li class="site-header__item">
-            <a class="site-header__link" href="#">Contact Us</a>
+          <li class="header__item">
+            <a class="header__link" href="#">Catalog</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Contact Us</a>
           </li>
         </ul>
       </nav>
-      <div class="site-header__utilities">
+
+      <div class="header__actions">
         <a
-          class="site-header__action site-header__action--primary"
+          class="button button--secondary"
           href="https://discord.com"
           target="_blank"
           >Discord</a
         >
-        <a
-          class="site-header__action site-header__action--secondary"
-          href="/login.html"
-          >Log In</a
-        >
+        <a class="button button--primary" href="/login.html">Log In</a>
       </div>
     </header>
 
     <section class="breadcrumb">
       <h1 class="breadcrumb__title">Our blog</h1>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb__list">
+      <nav class="breadcrumb__navigation" aria-label="Breadcrumb navigation">
+        <ul class="breadcrumb__list">
           <li class="breadcrumb__item">
             <a class="breadcrumb__link" href="/index.html">Home</a>
           </li>
@@ -79,80 +74,68 @@
               >The Basilisks NFT</a
             >
           </li>
-        </ol>
+        </ul>
       </nav>
     </section>
 
-    <aside>
-      <section class="sidebar-widget sidebar-widget--primary">
-        <h2 class="sidebar-widget__title">Categories</h2>
-        <ul class="sidebar-widget__list">
-          <li class="sidebar-widget__item">
-            <a class="sidebar-widget__link" href="#">Our blog (12)</a>
+    <aside class="sidebar">
+      <section class="categories">
+        <h2 class="categories__title">Categories</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a class="categories__link" href="#">Our blog (12)</a>
           </li>
-          <li class="sidebar-widget__item">
-            <a class="sidebar-widget__link" href="#">Metaverse (24)</a>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Metaverse (24)</a>
           </li>
-          <li class="sidebar-widget__item">
-            <a class="sidebar-widget__link" href="#">Gaming (34)</a>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Gaming (34)</a>
           </li>
-          <li class="sidebar-widget__item">
-            <a class="sidebar-widget__link" href="#">Art (21)</a>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Art (21)</a>
           </li>
-          <li class="sidebar-widget__item">
-            <a class="sidebar-widget__link" href="#">Robot (24)</a>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Robot (24)</a>
           </li>
-          <li class="sidebar-widget__item">
-            <a class="sidebar-widget__link" href="#">Launchpad (28)</a>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Launchpad (28)</a>
           </li>
-          <li class="sidebar-widget__item">
-            <a class="sidebar-widget__link" href="#">Crypto (43)</a>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Crypto (43)</a>
           </li>
         </ul>
       </section>
 
-      <section class="sidebar-widget sidebar-widget--secondary">
-        <h2 class="sidebar-widget__title">Tag</h2>
-        <ul class="sidebar-widget__list sidebar-widget__list--bordered">
-          <li class="sidebar-widget__item">
-            <a
-              class="sidebar-widget__link sidebar-widget__link--bordered"
-              href="#"
+      <section class="tags">
+        <h2 class="tags__title">Tag</h2>
+        <ul class="tags__list">
+          <li class="tags__item">
+            <a class="button button--secondary tags__button--small" href="#"
               >NFT</a
             >
           </li>
-          <li class="sidebar-widget__item">
-            <a
-              class="sidebar-widget__link sidebar-widget__link--bordered"
-              href="#"
+          <li class="sidebar__item">
+            <a class="button button--secondary tags__button--small" href="#"
               >ICO</a
             >
           </li>
-          <li class="sidebar-widget__item">
-            <a
-              class="sidebar-widget__link sidebar-widget__link--bordered"
-              href="#"
+          <li class="sidebar__item">
+            <a class="button button--secondary sidebar__button--small" href="#"
               >Robot</a
             >
           </li>
-          <li class="sidebar-widget__item">
-            <a
-              class="sidebar-widget__link sidebar-widget__link--bordered"
-              href="#"
+          <li class="sidebar__item">
+            <a class="button button--secondary sidebar__button--small" href="#"
               >Crypto</a
             >
           </li>
-          <li class="sidebar-widget__item">
-            <a
-              class="sidebar-widget__link sidebar-widget__link--bordered"
-              href="#"
+          <li class="sidebar__item">
+            <a class="button button--secondary sidebar__button--small" href="#"
               >Launchpad</a
             >
           </li>
-          <li class="sidebar-widget__item">
-            <a
-              class="sidebar-widget__link sidebar-widget__link--bordered"
-              href="#"
+          <li class="sidebar__item">
+            <a class="button button--secondary sidebar__button--small" href="#"
               >Metaverse</a
             >
           </li>
@@ -220,41 +203,39 @@
           </ul>
         </div>
 
-        <blockquote class="blog-blockquote">
-          <p class="blog-blockquote__text">
+        <blockquote class="article__blockquote">
+          <p class="article__quote">
             “The first huge metaverse arena to arrange live sports, hang out and
             even make bets and wagers”
           </p>
-          <footer class="blog-blockquote__footer">
-            <cite class="blog-blockquote__cite"
-              >✨ <span class="blog-blockquote__score">8.5/10</span> Markout
-              Corporation</cite
-            >
-          </footer>
+          <cite class="article__cite"
+            >✨ <span class="article__score">8.5/10</span>
+            <span class="article__source">Markout Corporation </span></cite
+          >
         </blockquote>
 
-        <ul class="figures-list">
-          <li class="figures-list__item">
-            <figure class="figures-list__figure">
+        <ul class="article__figures">
+          <li class="article__figure-item">
+            <figure class="article__figure">
               <img
                 src=""
                 alt="Basilsik Gen-3"
                 class="article__image article__image--md"
               />
-              <figcaption class="figures-list__caption">
+              <figcaption class="article__caption">
                 Close-up of Gen-3 Basilisk. Eyes trained by code.
               </figcaption>
             </figure>
           </li>
 
-          <li class="figures-list__item">
-            <figure class="figures-list__figure">
+          <li class="article__figure-item">
+            <figure class="article__figure">
               <img
                 src=""
                 alt="Basilisk with summoner"
                 class="article__image article__image--md"
               />
-              <figcaption class="figures-list__caption">
+              <figcaption class="article__caption">
                 A bonded Basilisk with its summoner. Loyalty is minted — not
                 earned.
               </figcaption>
@@ -262,18 +243,18 @@
           </li>
         </ul>
 
-        <section class="blog-paragraph">
-          <h2 class="blog-paragraph__title">
+        <section class="article__section">
+          <h2 class="article__subtitle">
             NFTs are digital assets that represent real-world objects
           </h2>
-          <p class="blog-paragraph__text">
+          <p class="article__text">
             Setting up your avatar and personalizing your nickname on Binance is
             quick and easy. Users can go to binance.com under Dashboard >
             Settings > My Profile > Avatar and Nickname. For those of you who
             own NFT assets, you can select the NFT you want to use from your
             collection as your avatar to personalize your profile.
           </p>
-          <p class="blog-paragraph__text">
+          <p class="article__text">
             Alternatively, if you're on nft.binance.com, go to User Center >
             Settings > Basic > Set Avatar and Nickname, and you’ll be redirected
             to the main site. Binance NFT Creators have the option of setting
@@ -283,155 +264,192 @@
           </p>
         </section>
 
-        <section class="blog-steps">
-          <h3 class="blog-paragraph__title">NFT Avatar Generators</h3>
-          <p class="blog-steps__text">Looking to join the pack?</p>
-          <p class="blog-steps__text">
+        <section class="article__section">
+          <h3 class="article__subtitle">NFT Avatar Generators</h3>
+          <p class="article__text">Looking to join the pack?</p>
+          <p class="article__text">
             Use the
-            <a class="blog-steps__link blog-steps__link--highlight" href="#"
+            <a class="article__link article__link--highlight" href="#"
               >NFT Avatar Generator</a
             >
             to craft your own beast — or grab a rare egg on the marketplace.
           </p>
-          <p class="blog-steps__text">
-            You name it. You own it. You unleash it.
-          </p>
+          <p class="article__text">You name it. You own it. You unleash it.</p>
 
-          <div class="blog-steps__footer">
-            <div class="blog-steps__tags">
-              <p class="blog-steps__label">Tags:</p>
-              <button type="button" class="blog-steps__tag">NFT</button>
-              <button type="button" class="blog-steps__tag">Metaverse</button>
-              <button type="button" class="blog-steps__tag">Crypto</button>
+          <div class="article__footer">
+            <div class="article__tags">
+              <p class="article__label">Tags:</p>
+              <button type="button" class="article__tag">NFT</button>
+              <button type="button" class="article__tag">Metaverse</button>
+              <button type="button" class="article__tag">Crypto</button>
             </div>
           </div>
 
-          <div class="blog-steps-footer">
-            <div class="blog-steps__tags">
-              <p class="blog-steps__label">Share:</p>
-              <a
-                href="#"
-                class="social-media-tags__link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <img src="" alt="Twitter" class="social-media-tags__icon" />
-              </a>
-              <a
-                href="#"
-                class="social-media-tags__link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-              >
-                <img src="" alt="Facebook" class="social-media-tags__icon" />
-              </a>
-              <a
-                href="#"
-                class="social-media-tags__link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <img src="" alt="Instagram" class="social-media-tags__icon" />
-              </a>
+          <div class="article__footer">
+            <div class="article__tags">
+              <p class="article__label">Share:</p>
+              <ul class="social__tags">
+                <li>
+                  <a
+                    href="#"
+                    class="socials__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter"
+                  >
+                    <img src="" alt="Twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="socials__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                  >
+                    <img src="" alt="Facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="socials__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <img src="" alt="Instagram" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
       </article>
     </main>
 
-    <footer class="bottom-footer">
-      <div class="bottom-footer__brand">
-        <a href="#" class="bottom-footer__logo">
-          <img src="" alt="Binabox" class="bottom-footer__image" />
+    <footer class="footer">
+      <h2 class="visually-hidden">Footer</h2>
+
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="" alt="Binabox" />
         </a>
-        <p class="bottom-footer__tagline">
-          We are the best way to check the rarity of NFT collections.
+        <p class="footer__tagline">
+          We are the best way to check the rarity of NFT collection.
         </p>
       </div>
 
-      <nav class="bottom-footer__nav">
-        <h4 class="bottom-footer__nav-title">Navigation</h4>
+      <nav class="footer__nav">
+        <h3 class="footer__nav-title">Navigation</h3>
         <ul>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Home</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Home</a>
           </li>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Blog</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Blog</a>
           </li>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Catalog</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Catalog</a>
           </li>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Contact Us</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Contact Us</a>
           </li>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Terms & Conditions</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Terms & Conditions</a>
           </li>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Privacy Policy</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Privacy Policy</a>
           </li>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Whitepaper</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Whitepaper</a>
           </li>
-          <li class="bottom-footer__nav-item">
-            <a class="bottom-footer__nav-link" href="#">Help Center</a>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Help Center</a>
           </li>
         </ul>
       </nav>
 
-      <div class="social-media-tags">
-        <p>
-          <a
-            href="#"
-            class="social-media-tags__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Twitter</a
-          >
+      <div class="footer__socials">
+        <h3 class="visually-hidden">Social links</h3>
 
-          <a
-            href="#"
-            class="social-media-tags__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Facebook</a
-          >
-          <a
-            href="#"
-            class="social-media-tags__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Telegram</a
-          >
-          <a
-            href="#"
-            class="social-media-tags__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >YouTube</a
-          >
-          <a
-            href="#"
-            class="social-media-tags__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >TikTok</a
-          >
-          <a
-            href="#"
-            class="social-media-tags__link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Discord</a
-          >
-        </p>
+        <ul class="social__tags">
+          <li>
+            <a
+              href="#"
+              class="socials__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
+              <img src="" alt="X" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <img src="" alt="Facebook" class="socials__icon" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="socials__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Telegram"
+            >
+              <img src="" alt="Telegram" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="socials__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Youtube"
+            >
+              <img src="" alt="Youtube" class="socials__icon" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="socials__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+            >
+              <img src="" alt="TikTok" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="socials__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Discord"
+            >
+              <img src="" alt="Discord" />
+            </a>
+          </li>
+        </ul>
       </div>
+      <div class="footer__bottom">
+        <h3 class="visually-hidden">Legal</h3>
 
-      <div>
-        <p class="bottom-footer__copyright">
+        <p class="footer__copyright">
           &copy; BINABOX 2025 – All rights reserved
         </p>
       </div>
