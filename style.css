@@ -30,7 +30,7 @@
   background-color: #1a1925;
 }
 
-.breadcrumb__title,
+.breadcrumbs__title,
 .article__title,
 .faq__title,
 .faq__title--md,
@@ -60,7 +60,7 @@
   color: #f8f7ff;
 }
 
-.breadcrumb__title,
+.breadcrumbs__title,
 .banner__title {
   font-weight: 400;
   font-size: 52px;
@@ -623,30 +623,30 @@ details {
   text-align: center;
 }
 
-.breadcrumb__item {
+.breadcrumbs__item {
   display: inline;
 }
 
-.breadcrumb__item::after {
+.breadcrumbs__item::after {
   content: " / ";
   color: #888;
 }
 
-.breadcrumb__item:last-child::after {
+.breadcrumbs__item:last-child::after {
   content: "";
 }
 
-.breadcrumb__link {
+.breadcrumbs__link {
   color: #f8f7ff;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
-.breadcrumb__link:hover {
+.breadcrumbs__link:hover {
   color: #aaa;
 }
 
-.breadcrumb__list {
+.breadcrumbs__list {
   display: flex;
   justify-content: center;
   gap: 20px;
