@@ -2,7 +2,7 @@
   background-color: #0d0d15;
 }
 
-.body--homepage {
+.homepage {
   font-family: "Poppins", sans-serif;
 
   font-size: 14px;
@@ -19,42 +19,46 @@
   text-align: center;
 }
 
-.page {
-  color: #1a1925;
-}
-
-body {
+.blogpage {
   font-family: "Poppins", sans-serif;
 
   font-size: 14px;
   background-color: #0d0d15;
 }
 
+.footer {
+  background-color: #1a1925;
+}
+
 .breadcrumb__title,
 .article__title,
+.faq__title,
+.faq__title--md,
 .team__title,
 .about__title,
+.feature__title,
 .banner__title,
 .article__title--md,
 .about__title--md,
-.blog-paragraph__title,
 .article__subtitle,
 .article__title--sm,
+.faq__question,
 .about__title--sm,
 .team__name,
-.product__title,
+.member__name,
+.products__title,
 .article__title,
-.card__title--md,
-.sidebar__title,
-.card__price,
+.post__title--md,
+.post__title,
+.product__price,
 .banner__value,
 .article__blockquote,
 .categories__title,
+.blog__title,
 .tags__title {
   font-family: "Bakbak One", sans-serif;
+  color: #f8f7ff;
 }
-
-/* DUPE */
 
 .breadcrumb__title,
 .banner__title {
@@ -67,8 +71,10 @@ body {
 }
 
 .article__title--md,
+.faq__title--md,
 .about__title--md,
-.team__title {
+.team__title,
+.blog__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
@@ -84,19 +90,28 @@ body {
 }
 
 .article__title--sm,
+.faq__question,
 .about__title--sm,
-.team__name {
+.team__name,
+.member__name,
+.feature__title {
   font-weight: 400;
-  color: #f8f7ff;
   font-size: 24px;
   line-height: 32px;
 }
 
-.product__title {
+.products__title {
   font-weight: 400;
-  color: #f8f7ff;
+
   font-size: 24px;
   line-height: 32px;
+}
+
+.product__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #eff5fad1;
 }
 
 .article__text {
@@ -112,11 +127,12 @@ body {
   color: #eff5fad1;
 }
 
-.card__title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  color: #eff5fad1;
+.post__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #f5f8fb;
 }
 
 .banner__text {
@@ -288,7 +304,7 @@ header {
   cursor: pointer;
 }
 
-.product__control--highlight {
+.products__controls--highlight {
   background-color: #0265dc;
   color: #0d0d15;
 }
@@ -344,48 +360,45 @@ header {
   color: #f5f8fb;
   cursor: pointer;
 }
-.card__inner {
+
+.product__inner {
   display: block;
   color: inherit;
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-.card__image {
+.product__image {
   order: 1;
+  display: block;
+  width: 100%;
 }
-.card__label {
+.product__label {
   order: 2;
 }
-.card__price {
+.product__price {
   order: 3;
 }
-.card__title {
+.product__title {
   order: 4;
+}
+
+.product__image {
+  display: block;
+  width: 100%;
 }
 .product__control--next {
   background-color: #0265dc;
   color: #0d0d15;
 }
 
-.card__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* ← prevent children from stretching */
-}
-
-.card__image {
-  display: block;
-  width: 100%;
-}
-
-.product {
+.products {
   padding: 40px 30px;
 }
 
-.about__text,
-.card__text {
+.about__text {
   color: #eff5fad1;
   font-weight: 400;
   font-size: 16px;
@@ -395,17 +408,37 @@ header {
   border-radius: 6px;
 }
 
+.feature__text {
+  color: #eff5fad1;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 20px;
+}
+
+.post__text {
+  color: #eff5fad1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  color: #eff5fad1;
+}
+
 .about__text,
-.card__text,
-.team__role {
+.team__role,
+.member__role {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #eff5fad1;
 }
 
-.blog__date,
-.blog__author {
+.post__date,
+.post__author {
   font-weight: 600;
   line-height: 20px;
   color: #eff5fad1;
@@ -422,26 +455,29 @@ header {
   opacity: 0.4;
 }
 
-.card {
+.feature__number {
+  top: 20px;
+  left: 20px;
+  font-size: 64px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px #0265dc;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.product {
   display: flex;
   flex-direction: column;
   align-items: center;
   order: 1;
 }
 
-.card__price {
+.product__price {
   color: #f5f8fb;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
-}
-
-.card .card__price {
-  order: 2;
-}
-
-.card__title {
-  order: 3;
 }
 
 .blog-post {
@@ -450,7 +486,7 @@ header {
   color: #f5f8fb;
 }
 
-.card__label {
+.post__label {
   color: #0265dc;
   background-color: #f5f8fb;
 
@@ -463,7 +499,46 @@ header {
   white-space: nowrap;
 }
 
-.card__label--secondary {
+.product__label {
+  color: #0265dc;
+  background-color: #f5f8fb;
+
+  display: inline-block;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: right;
+  padding: 8px 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.label {
+  color: #0265dc;
+  background-color: #f5f8fb;
+
+  display: inline-block;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: right;
+  padding: 8px 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.label--primary {
+  color: #0265dc;
+  background-color: #f5f8fb;
+
+  display: inline-block;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: right;
+  padding: 8px 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.label--secondary {
   background-color: #ea3829;
   color: #f5f8fb;
 }
@@ -512,15 +587,33 @@ details {
   padding: 0;
 }
 
+.member__socials:visited {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f5f8fb;
+  text-decoration: none;
+  padding: 0;
+}
+
 .socials,
-.socials__link {
+.socials__link,
+.footer__social-link {
+  font-size: 0px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.member__socials,
+.member__social {
   font-size: 0px;
   padding: 0;
   text-decoration: none;
 }
 
 .footer__socials,
-.social__tags {
+.social__tags,
+.footer__social-list {
   list-style: none;
 }
 
@@ -556,18 +649,13 @@ details {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.breadcrumb {
+.breadcrumbs {
   padding: 20px 32px;
   color: #f8f7ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.breadcrumb__list {
-  list-style: none;
-  padding: 0;
 }
 
 .breadcrumb__item {
@@ -602,6 +690,8 @@ details {
   color: #f8f7ff;
   font-weight: 600;
   line-height: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 .categories {
