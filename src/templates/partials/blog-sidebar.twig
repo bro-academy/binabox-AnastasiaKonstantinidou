@@ -1,0 +1,25 @@
+<aside class='sidebar'>
+  <section class='categories'>
+    <h2 class='categories__title'>Categories</h2>
+    <ul class='categories__list'>
+      {% for category in sidebar.categories %}
+        <li>
+          <a class='categories__link' href='{{ category.href }}'> {{ category.label }} ({{ category.count }}) </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class='tags'>
+    <h2 class='tags__title'>Tag</h2>
+    <ul class='tags__list'>
+      {% for tag in sidebar.tags %}
+        <li>
+          <a class='button button--secondary tags__button--small' href='{{ tag.href }}'>
+            {{ tag.label }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</aside>
