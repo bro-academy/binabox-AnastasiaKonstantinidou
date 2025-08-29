@@ -1,0 +1,39 @@
+<footer class='footer'>
+  <h2 class='visually-hidden'>Footer</h2>
+
+  <div class='footer__brand'>
+    <a href='#' class='footer__logo'>
+      <img src='{{ site.footer.brand.logo }}' alt='{{ site.footer.brand.alt }}'>
+    </a>
+    <p class='footer__tagline'>{{ site.footer.brand.tagline }}</p>
+  </div>
+
+  <nav class='footer__nav'>
+    <h3 class='footer__nav-title'>{{ site.footer.navTitle }}</h3>
+    <ul class='footer__nav-list'>
+      {% for item in site.footer.nav %}
+        <li class='footer__nav-item'>
+          <a class='footer__nav-link' href='{{ item.href }}'>{{ item.label }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class='footer__socials'>
+    <h3 class='visually-hidden'>Social links</h3>
+    <ul class='footer__social-list'>
+      {% for social in site.footer.socials %}
+        <li class='footer__social-item'>
+          <a href='{{ social.href }}' aria-label='{{ social.label }}'>
+            <img src='{{ social.icon }}' alt='footer social {{social.label}}' class='footer__social-icon'>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class='footer__bottom'>
+    <h3 class='visually-hidden'>Legal</h3>
+    <p class='footer__copyright'>{{ site.footer.copyright }}</p>
+  </div>
+</footer>

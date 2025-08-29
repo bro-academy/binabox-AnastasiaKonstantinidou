@@ -1,0 +1,20 @@
+<section class='breadcrumbs'>
+  <h1 class='breadcrumbs__title'>Our blog</h1>
+  <nav class='breadcrumbs__navigation' aria-label='Breadcrumbs navigation'>
+    <ul class='breadcrumbs__list'>
+      {% for crumb in breadcrumbs %}
+        <li class='breadcrumbs__item'>
+          <a
+            class='breadcrumbs__link'
+            href='{{ crumb.href }}'
+            {% if crumb.current %}
+              aria-current='page'
+            {% endif %}
+          >
+            {{ crumb.label }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</section>

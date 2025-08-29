@@ -1,5 +1,33 @@
 {
-  "common": {
-    "siteTitle": "Bro Starter"
+  "site": {
+    "footer": {
+      "brand": {
+        "logo": "",
+        "alt": "Binabox",
+        "tagline": "We are the best way to check the rarity of NFT collection."
+      },
+
+      "navTitle": "Navigation",
+      "nav": [
+        { "label": "Home", "href": "#" },
+        { "label": "Blog", "href": "#" },
+        { "label": "Catalog", "href": "#" },
+        { "label": "Contact Us", "href": "#" },
+        { "label": "Terms & Conditions", "href": "#" },
+        { "label": "Privacy Policy", "href": "#" },
+        { "label": "Whitepaper", "href": "#" },
+        { "label": "Help Center", "href": "#" }
+      ],
+
+      "socials": [
+        { "label": "X", "icon": "icon-x", "href": "#" },
+        { "label": "Facebook", "icon": "icon-facebook", "href": "#" },
+        { "label": "Telegram", "icon": "icon-telegram", "href": "#" },
+        { "label": "Youtube", "icon": "icon-youtube", "href": "#" },
+        { "label": "TikTok", "icon": "icon-tiktok", "href": "#" },
+        { "label": "Discord", "icon": "icon-discord", "href": "#" }
+      ],
+      "copyright": "© BINABOX 2025 – All rights reserved"
+    }
   }
 }

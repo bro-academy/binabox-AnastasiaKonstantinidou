@@ -1,0 +1,45 @@
+{% for section in sections %}
+  <section class='article__section'>
+    <h2 class='article__subtitle'>{{ section.title }}</h2>
+
+    {% for paragraph in section.paragraphs %}
+      <p class='article__text'>{{ paragraph }}</p>
+    {% endfor %}
+
+    {% if section.link %}
+      <p class='article__text'>
+        <a class='article__link article__link--highlight' href='{{ section.link.url }}'>
+          {{ section.link.text }}
+        </a>
+      </p>
+    {% endif %}
+
+    {% if section.tags %}
+      <div class='article__footer'>
+        <div class='article__tags'>
+          <p class='article__label'>Tags:</p>
+          {% for tag in section.tags %}
+            <button type='button' class='article__tag'>{{ tag }}</button>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if section.share %}
+      <div class='article__footer'>
+        <div class='article__tags'>
+          <p class='article__label'>Share:</p>
+          <ul class='social__tags'>
+            {% for social in section.share %}
+              <li>
+                <a href='#' class='socials__link' target='_blank' rel='noopener noreferrer' aria-label='{{ social }}'>
+                  <img src='icons/{{ social | lower }}.svg' alt='{{ social }}'>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+  </section>
+{% endfor %}

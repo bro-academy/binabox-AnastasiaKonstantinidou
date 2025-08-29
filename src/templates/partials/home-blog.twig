@@ -1,0 +1,24 @@
+<section class='blog'>
+  <h2 class='blog__title'>{{ blog.title }}</h2>
+  {% for post in blog.posts %}
+    <article class='blog__post post'>
+      <p class='post__meta'>
+        <img src='{{ post.image }}' alt='{{ post.title }}'>
+        <span class='post__author'>{{ post.author }}</span>
+
+        <time class='post__date' datetime='{{ post.datetime }}'>{{ post.date }}</time>
+      </p>
+      {% if post.label is defined %}
+        <span class='{{ post.label.class }}'>{{ post.label.text }}</span>
+      {% endif %}
+      <h3 class='post__title post__title--md'>{{ post.title }}</h3>
+      <p class='post__text'>{{ post.text }}</p>
+
+      {% if post.buttons is defined %}
+        {% for btn in post.buttons %}
+          <a href='{{ btn.href }}' class='button {{ btn.class }}'>{{ btn.text }}</a>
+        {% endfor %}
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>

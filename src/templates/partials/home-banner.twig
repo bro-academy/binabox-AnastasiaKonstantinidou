@@ -1,0 +1,26 @@
+<section class='banner'>
+  <h1 class='banner__title'>
+    WITH
+    <span class='banner__title--highlight'>{{ index.title }}</span> EXPLORE<br>
+    NFT COLLECTION
+  </h1>
+
+  <p class='banner__text'>
+    {{ index.subtitle }}
+  </p>
+
+  <div class='banner__stats'>
+    {% for stat in index.stats %}
+      <dl class='banner__stat'>
+        <dt class='banner__label'>{{ stat.label }}</dt>
+        <dd class='banner__value'>{{ stat.value }}</dd>
+      </dl>
+    {% endfor %}
+  </div>
+
+  <div>
+    {% for button in index.buttons %}
+      <a href='{{ button.href }}' class='button {{ button.class }}'>{{ button.text }}</a>
+    {% endfor %}
+  </div>
+</section>
