@@ -4,8 +4,10 @@
 {% set body_class = 'blogpage' %}
 
 {% block content %}
-  {% include 'src/templates/partials/blog-breadcrumbs.twig' %}
+  <div class='blog-layout'>
+    {% include 'src/templates/partials/blog-breadcrumbs.twig' %}
 
-  {% include 'src/templates/partials/blog-sidebar.twig' %}
-  {% include 'src/templates/partials/blog-article.twig' %}
+    {% include 'src/templates/partials/blog-sidebar.twig' %}
+    {% include 'src/templates/partials/blog-article.twig' %}
+  </div>
 {% endblock %}

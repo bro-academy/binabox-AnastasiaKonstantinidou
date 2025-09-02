@@ -1,114 +1,112 @@
-<main>
-  <article class='article'>
-    <figure class='article__figure'>
-      <img
-        src='{{ article.image }}'
-        alt='{{ article.title }}'
-        class='article__image article__image--lg'
-      >
-      <figcaption class='article__caption'>
-        {{ article.caption }}
-      </figcaption>
-    </figure>
-    <h2 class='article__title article__title--md'>{{ article.title }}</h2>
-    <a href='#' class='article__category'>{{ article.category }}</a>
-    <div class='article__meta'>
-      <span class='article__author'>{{ article.author }}</span>
-      <time class='article__date' datetime='{{ article.datetime }}'>📅 {{ article.date }}</time>
-    </div>
+<article class='article'>
+  <figure class='article__figure'>
+    <img
+      src='{{ article.image }}'
+      alt='{{ article.title }}'
+      class='article__image article__image--lg'
+    >
+    <figcaption class='article__caption'>
+      {{ article.caption }}
+    </figcaption>
+  </figure>
+  <h2 class='article__title article__title--md'>{{ article.title }}</h2>
+  <a href='#' class='article__category'>{{ article.category }}</a>
+  <div class='article__meta'>
+    <span class='article__author'>{{ article.author }}</span>
+    <time class='article__date' datetime='{{ article.datetime }}'>📅 {{ article.date }}</time>
+  </div>
 
-    <div>
-      {% for paragraph in article.paragraphs %}
+  <div>
+    {% for paragraph in article.paragraphs %}
+      <p class='article__text'>{{ paragraph }}</p>
+    {% endfor %}
+
+    <ul>
+      {% for bullet in article.bullets %}
+        <li class='article__text'>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <ul class='article__text'>
+    {% for detail in article.details %}
+      <li>{{ detail }}</li>
+    {% endfor %}
+  </ul>
+
+  <div>
+    <ul class='article__text article__text--no-bullets'>
+      {% for feature in article.features %}
+        <li>{{ feature }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <blockquote class='article__blockquote'>
+    <p class='article__quote'>{{ article.quote.text }}</p>
+    <cite class='article__cite'>
+      ✨ <span class='article__score'>{{ article.quote.score }}</span>
+      <span class='article__source'>{{ article.quote.source }}</span>
+    </cite>
+  </blockquote>
+  <ul class='article__figures'>
+    {% for fig in article.figureSection.figures %}
+      <li class='article__figure-item'>
+        <figure class='article__figure'>
+          <img src='{{ fig.src }}' alt='{{ fig.alt }}'>
+          <figcaption class='article__caption'>{{ fig.caption }}</figcaption>
+        </figure>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% for section in sections %}
+    <section class='article__section'>
+      {% if section.heading == 'h2' %}
+        <h2 class='article__subtitle'>{{ section.title }}</h2>
+      {% else %}
+        <h3 class='article__subtitle'>{{ section.title }}</h3>
+      {% endif %}
+
+      {% for paragraph in section.paragraphs %}
         <p class='article__text'>{{ paragraph }}</p>
       {% endfor %}
 
-      <ul>
-        {% for bullet in article.bullets %}
-          <li class='article__text'>{{ bullet }}</li>
-        {% endfor %}
-      </ul>
-    </div>
+      <p class='article__text'>
+        <a class='article__link article__link--highlight' href='{{ section.link.url }}'>
+          {{ section.link.text }}
+        </a>
+      </p>
 
-    <ul class='article__text'>
-      {% for detail in article.details %}
-        <li>{{ detail }}</li>
-      {% endfor %}
-    </ul>
+      <div class='article__footer'>
+        <div class='article__tags'>
+          <p class='article__label'>Tags:</p>
+          {% for tag in article.tags %}
+            <button type='button' class='article__tag'>{{ tag }}</button>
+          {% endfor %}
+        </div>
+      </div>
 
-    <div>
-      <ul class='article__text article__text--no-bullets'>
-        {% for feature in article.features %}
-          <li>{{ feature }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <blockquote class='article__blockquote'>
-      <p class='article__quote'>{{ article.quote.text }}</p>
-      <cite class='article__cite'>
-        ✨ <span class='article__score'>{{ article.quote.score }}</span>
-        <span class='article__source'>{{ article.quote.source }}</span>
-      </cite>
-    </blockquote>
-    <ul class='article__figures'>
-      {% for fig in article.figureSection.figures %}
-        <li class='article__figure-item'>
-          <figure class='article__figure'>
-            <img src='{{ fig.src }}' alt='{{ fig.alt }}'>
-            <figcaption class='article__caption'>{{ fig.caption }}</figcaption>
-          </figure>
-        </li>
-      {% endfor %}
-    </ul>
-
-    {% for section in sections %}
-      <section class='article__section'>
-        {% if section.heading == 'h2' %}
-          <h2 class='article__subtitle'>{{ section.title }}</h2>
-        {% else %}
-          <h3 class='article__subtitle'>{{ section.title }}</h3>
-        {% endif %}
-
-        {% for paragraph in section.paragraphs %}
-          <p class='article__text'>{{ paragraph }}</p>
-        {% endfor %}
-
-        <p class='article__text'>
-          <a class='article__link article__link--highlight' href='{{ section.link.url }}'>
-            {{ section.link.text }}
-          </a>
-        </p>
-
-        <div class='article__footer'>
-          <div class='article__tags'>
-            <p class='article__label'>Tags:</p>
-            {% for tag in article.tags %}
-              <button type='button' class='article__tag'>{{ tag }}</button>
+      <div class='article__footer'>
+        <div class='article__tags'>
+          <p class='article__label'>Share:</p>
+          <ul class='social__tags'>
+            {% for social in article.share %}
+              <li>
+                <a
+                  href='{{ social.href }}'
+                  class='socials__link'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='{{ social.label }}'
+                >
+                  <img src='{{ social.icon }}' alt='{{ social.label }}'>
+                </a>
+              </li>
             {% endfor %}
-          </div>
+          </ul>
         </div>
-
-        <div class='article__footer'>
-          <div class='article__tags'>
-            <p class='article__label'>Share:</p>
-            <ul class='social__tags'>
-              {% for social in article.share %}
-                <li>
-                  <a
-                    href='{{ social.href }}'
-                    class='socials__link'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    aria-label='{{ social.label }}'
-                  >
-                    <img src='{{ social.icon }}' alt='{{ social.label }}'>
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-      </section>
-    {% endfor %}
-  </article>
-</main>
+      </div>
+    </section>
+  {% endfor %}
+</article>

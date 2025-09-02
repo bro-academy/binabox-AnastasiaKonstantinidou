@@ -1,37 +1,4 @@
 {
-  "header": {
-    "logo": "#",
-    "links": [
-      { "label": "Home", "href": "index.html", "active": true },
-      { "label": "Blog", "href": "blog.html" },
-      { "label": "Catalog", "href": "#" },
-      { "label": "Contact Us", "href": "#" }
-    ],
-    "actions": [
-      {
-        "label": "Discord",
-        "href": "https://discord.com",
-        "class": "button--secondary",
-        "target": "_blank"
-      },
-      { "label": "Log In", "href": "/login.html", "class": "button--primary" }
-    ]
-  },
-
-  "pages": {
-    "index": {
-      "title": "Binabox Homepage",
-      "description": "The homepage of BINABOX 2025.",
-      "styles": ["src/styles/normalize.css", "src/styles/style.css"]
-    },
-
-    "blog": {
-      "title": "Binabox Blog",
-      "description": "Blog of BINABOX 2025.",
-      "styles": ["src/styles/normalize.css", "src/styles/style.css"]
-    }
-  },
-
   "index": {
     "title": "BINABOX",
     "subtitle": "We are the best way to check the rarity of NFT collection",
