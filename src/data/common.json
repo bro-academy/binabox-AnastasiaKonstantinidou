@@ -3,7 +3,7 @@
     "header": {
       "logo": "#",
       "links": [
-        { "label": "Home", "href": "index.html", "active": true },
+        { "label": "Home", "href": "index.html" },
         { "label": "Blog", "href": "blog.html" },
         { "label": "Catalog", "href": "#" },
         { "label": "Contact Us", "href": "#" }

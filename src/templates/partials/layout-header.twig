@@ -7,7 +7,10 @@
     <ul class='header__list'>
       {% for link in site.header.links %}
         <li class='header__item'>
-          <a class='header__link {% if link.active %}header__link--active{% endif %}' href='{{ link.href }}'>
+          <a
+            class='header__link {% if currentPage == link.label %}header__link--active{% endif %}'
+            href='{{ link.href }}'
+          >
             {{ link.label }}
           </a>
         </li>
