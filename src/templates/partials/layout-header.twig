@@ -1,11 +1,11 @@
 <header class='header'>
-  <a href='{{ header.logo }}' class='header__logo'>
+  <a href='{{ site.header.logo }}' class='header__logo'>
     <img src='#' alt='Binabox'>
   </a>
 
   <nav class='header__menu'>
     <ul class='header__list'>
-      {% for link in header.links %}
+      {% for link in site.header.links %}
         <li class='header__item'>
           <a class='header__link {% if link.active %}header__link--active{% endif %}' href='{{ link.href }}'>
             {{ link.label }}
@@ -16,7 +16,7 @@
   </nav>
 
   <div class='header__actions'>
-    {% for action in header.actions %}
+    {% for action in site.header.actions %}
       <a
         class='button {{ action.class }}'
         href='{{ action.href }}'
