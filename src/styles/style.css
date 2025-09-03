@@ -3,7 +3,7 @@
 }
 
 .homepage {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   font-size: 14px;
   background-color: #0d0d15;
@@ -20,7 +20,7 @@
 }
 
 .blogpage {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   font-size: 14px;
   background-color: #0d0d15;
@@ -56,7 +56,7 @@
 .categories__title,
 .blog__title,
 .tags__title {
-  font-family: "Bakbak One", sans-serif;
+  font-family: 'Bakbak One', sans-serif;
   color: #f8f7ff;
 }
 
@@ -104,7 +104,8 @@
   line-height: 32px;
 }
 
-.product__subtitle {
+.product__subtitle,
+.product__title {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -628,12 +629,12 @@ details {
 }
 
 .breadcrumbs__item::after {
-  content: " / ";
+  content: ' / ';
   color: #888;
 }
 
 .breadcrumbs__item:last-child::after {
-  content: "";
+  content: '';
 }
 
 .breadcrumbs__link {

@@ -1,5 +1,66 @@
 {
-  "common": {
-    "siteTitle": "Bro Starter"
+  "site": {
+    "header": {
+      "logo": "#",
+      "links": [
+        { "label": "Home", "href": "index.html" },
+        { "label": "Blog", "href": "blog.html" },
+        { "label": "Catalog", "href": "#" },
+        { "label": "Contact Us", "href": "#" }
+      ],
+      "actions": [
+        {
+          "label": "Discord",
+          "href": "https://discord.com",
+          "class": "button--secondary",
+          "target": "_blank"
+        },
+        { "label": "Log In", "href": "/login.html", "class": "button--primary" }
+      ]
+    },
+
+    "pages": {
+      "index": {
+        "title": "Binabox Homepage",
+        "description": "The homepage of BINABOX 2025.",
+        "styles": ["src/styles/normalize.css", "src/styles/style.css"]
+      },
+
+      "blog": {
+        "title": "Binabox Blog",
+        "description": "Blog of BINABOX 2025.",
+        "styles": ["src/styles/normalize.css", "src/styles/style.css"]
+      }
+    },
+
+    "footer": {
+      "brand": {
+        "logo": "",
+        "alt": "Binabox",
+        "tagline": "We are the best way to check the rarity of NFT collection."
+      },
+
+      "navTitle": "Navigation",
+      "nav": [
+        { "label": "Home", "href": "#" },
+        { "label": "Blog", "href": "#" },
+        { "label": "Catalog", "href": "#" },
+        { "label": "Contact Us", "href": "#" },
+        { "label": "Terms & Conditions", "href": "#" },
+        { "label": "Privacy Policy", "href": "#" },
+        { "label": "Whitepaper", "href": "#" },
+        { "label": "Help Center", "href": "#" }
+      ],
+
+      "socials": [
+        { "label": "X", "icon": "icon-x", "href": "#" },
+        { "label": "Facebook", "icon": "icon-facebook", "href": "#" },
+        { "label": "Telegram", "icon": "icon-telegram", "href": "#" },
+        { "label": "Youtube", "icon": "icon-youtube", "href": "#" },
+        { "label": "TikTok", "icon": "icon-tiktok", "href": "#" },
+        { "label": "Discord", "icon": "icon-discord", "href": "#" }
+      ],
+      "copyright": "© BINABOX 2025 – All rights reserved"
+    }
   }
 }

@@ -1,5 +1,302 @@
 {
   "index": {
-    "title": "Hello World!"
+    "title": "BINABOX",
+    "subtitle": "We are the best way to check the rarity of NFT collection",
+    "stats": [
+      { "label": "Total Item", "value": "2240+" },
+      { "label": "Profiles Whitelisted", "value": "1000+" }
+    ],
+
+    "buttons": [
+      { "text": "Connect wallet", "href": "#", "class": "button--primary" },
+
+      {
+        "text": "Whitelist now",
+        "href": "#",
+        "class": "button--secondary"
+      }
+    ],
+
+    "catalog": {
+      "icon": "📁",
+      "title": "Catalog",
+      "controls": [
+        {
+          "type": "link",
+          "label": "See all",
+          "style": "secondary",
+          "href": "#"
+        },
+        { "type": "button", "label": "‹", "style": "secondary" },
+        {
+          "type": "button",
+          "label": "›",
+          "style": "primary products__controls--highlight"
+        }
+      ]
+    }
+  },
+
+  "products": [
+    {
+      "title": "Echo of Bones",
+      "price": "$1990",
+      "image": "",
+      "label": {
+        "text": "New",
+        "class": "label--primary"
+      }
+    },
+
+    {
+      "title": "Nyx the Watcher",
+      "price": "$299.99",
+      "image": "",
+      "label": {
+        "text": "New",
+        "class": "label--primary"
+      }
+    },
+
+    {
+      "title": "Blade of Silence",
+      "price": "$20",
+      "image": "",
+      "label": {
+        "text": "Sold out",
+        "class": "label--secondary"
+      }
+    },
+
+    {
+      "title": "Data Core: Alpha",
+      "price": "$1,000,000",
+      "image": ""
+    },
+
+    {
+      "title": "Phantom Console",
+      "price": "$199.5",
+      "image": ""
+    }
+  ],
+
+  "blog": {
+    "title": "Our Blog",
+
+    "posts": [
+      {
+        "author": "👤Kairo Null",
+        "date": "06 Dec 2022",
+        "datetime": "2022-12-06",
+        "title": "Deadframe",
+        "text": "He just stood there, waiting. Not for a person — for a signal. Like the memory of the network.",
+        "label": { "text": "DROP", "class": "label--primary" },
+        "image": "",
+        "buttons": [
+          {
+            "text": "Read more",
+            "class": "button--secondary button--large",
+            "href": "#"
+          }
+        ]
+      },
+
+      {
+        "author": "👤Synthya Void",
+        "date": "07 Dec 2022",
+        "datetime": "2022-12-07",
+        "title": "Glitch Panther",
+        "text": "Cats always knew more than they showed. Especially the ones that vanish into code.",
+        "label": { "text": "NFT", "class": "label--primary" },
+        "image": "",
+        "buttons": [
+          {
+            "text": "Read more",
+            "class": "button--secondary button--large",
+            "href": "#"
+          }
+        ]
+      },
+
+      {
+        "author": "👤Dr. Wex Omega",
+        "date": "08 Dec 2022",
+        "datetime": "2022-12-08",
+        "title": "Primal.exe",
+        "text": "We tried to resurrect the past. What we got was rage compressed into an algorithm.",
+        "label": { "text": "RARE", "class": "label--primary" },
+        "image": "",
+        "buttons": [
+          {
+            "text": "Read more",
+            "class": "button--secondary button--large",
+            "href": "#"
+          }
+        ]
+      },
+
+      {
+        "author": "👤Tony Nguyen",
+        "date": "20 Jun 2022",
+        "datetime": "2022-07-20",
+        "title": "White Protocol",
+        "text": "At first, it was just a signal — clean, white, hypnotic. We didn’t know it was alive.",
+        "label": { "text": "NFT", "class": "label--primary" },
+        "image": "",
+        "buttons": [
+          {
+            "text": "Read more",
+            "class": "button--secondary button--large",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "author": "👤Echo Zero",
+        "date": "09 Dec 2022",
+        "datetime": "2022-12-09",
+        "title": "Retrocore",
+        "text": "This console comes from a game no one remembers how to play. But it’s still powered on.",
+        "label": { "text": "ARTIFACT", "class": "label--primary" },
+        "image": "",
+        "buttons": [
+          {
+            "text": "Read more",
+            "class": "button--secondary button--large",
+            "href": "#"
+          },
+          {
+            "text": "Read more",
+            "class": "button--secondary button--xl",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+
+  "about": {
+    "title": "About us",
+    "intro": "We craft digital artifacts for those who live between worlds. Our space is built for creators, collectors, and the quietly obsessed.",
+    "features": [
+      {
+        "title": "Crystal Clear Quality",
+        "number": "01",
+        "text": "Every NFT we drop is razor-sharp, high-res, and glitch-free. Art that hits hard and stays clean."
+      },
+
+      {
+        "title": "Curated Depth",
+        "number": "02",
+        "text": "Not just big — meaningful. Each piece tells a story, every collection builds a universe."
+      },
+      {
+        "title": "Rare Source Access",
+        "number": "03",
+        "text": "Early drops. Backstage peeks. Our members don’t scroll — they unlock."
+      },
+      {
+        "title": "Living Network",
+        "number": "04",
+        "text": "Our community isn’t a list — it’s a force. Artists, rebels, dreamers."
+      }
+    ],
+    "button": {
+      "text": "Read more",
+      "href": "#",
+      "class": "button button--secondary button--xl"
+    }
+  },
+
+  "team": {
+    "title": "Our team",
+    "members": [
+      {
+        "name": "Nova Riven",
+        "role": "Creative Architect",
+        "socials": [
+          { "href": "#", "label": "Telegram", "icon": "" },
+          { "href": "#", "label": "Telegram", "icon": "" },
+          { "href": "#", "label": "LinkedIn", "icon": "" },
+          { "href": "#", "label": "Instagram", "icon": "" }
+        ]
+      },
+
+      {
+        "name": "Echo Zaro",
+        "role": "Tech Whisperer",
+        "socials": [
+          { "href": "#", "label": "X", "icon": "" },
+          { "href": "#", "label": "LinkedIn", "icon": "" }
+        ]
+      },
+      {
+        "name": "Kairo Null",
+        "role": "Lore Engineer",
+        "socials": [
+          { "href": "#", "label": "Telegram", "icon": "" },
+          { "href": "#", "label": "X", "icon": "" },
+          { "href": "#", "label": "LinkedIn", "icon": "" },
+          { "href": "#", "label": "Instagram", "icon": "" }
+        ]
+      },
+      {
+        "name": "Dr. Wex Omega",
+        "role": "Visual Disruptor",
+        "socials": [
+          { "href": "#", "label": "Telegram", "icon": "" },
+          { "href": "#", "label": "X", "icon": "" },
+          { "href": "#", "label": "LinkedIn", "icon": "" },
+          { "href": "#", "label": "Instagram", "icon": "" }
+        ]
+      },
+      {
+        "name": "Synthya Void",
+        "role": "UX Seer",
+        "socials": [{ "href": "#", "label": "X", "icon": "" }]
+      },
+      {
+        "name": "Mirlo Drift",
+        "role": "Community Catalyst",
+        "socials": [
+          { "href": "#", "label": "Telegram", "icon": "" },
+          { "href": "#", "label": "X", "icon": "" },
+          { "href": "#", "label": "LinkedIn", "icon": "" },
+          { "href": "#", "label": "Instagram", "icon": "" }
+        ]
+      },
+      {
+        "name": "Axon Rune",
+        "role": "Security Ghost",
+        "socials": [
+          { "href": "#", "label": "Telegram", "icon": "" },
+          { "href": "#", "label": "X", "icon": "" },
+          { "href": "#", "label": "LinkedIn", "icon": "" },
+          { "href": "#", "label": "Instagram", "icon": "" }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQs",
+    "items": [
+      {
+        "question": "What are the NFTs?",
+        "answer": "<a href='#' class='faq__link'> NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified.<br>No copies. No fakes. Just you and the chain."
+      },
+      {
+        "question": "How do I get NFTs?",
+        "answer": "<a href='#' class='faq__link'> NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified.<br>No copies. No fakes. Just you and the chain."
+      },
+      {
+        "question": "How can we buy your NFTs?",
+        "answer": "<a href='#' class='faq__link'> NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified.<br>No copies. No fakes. Just you and the chain."
+      },
+      {
+        "question": "Who are the team behind the project?",
+        "answer": "<a href='#' class='faq__link'> NFTs (non-fungible tokens)</a> are unique digital objects stored on the blockchain. They can be art, music, code, memes, memories — anything that can be owned and verified.<br>No copies. No fakes. Just you and the chain."
+      }
+    ]
   }
 }

@@ -1,0 +1,34 @@
+<header class='header'>
+  <a href='{{ site.header.logo }}' class='header__logo'>
+    <img src='#' alt='Binabox'>
+  </a>
+
+  <nav class='header__menu'>
+    <ul class='header__list'>
+      {% for link in site.header.links %}
+        <li class='header__item'>
+          <a
+            class='header__link {% if currentPage == link.label %}header__link--active{% endif %}'
+            href='{{ link.href }}'
+          >
+            {{ link.label }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class='header__actions'>
+    {% for action in site.header.actions %}
+      <a
+        class='button {{ action.class }}'
+        href='{{ action.href }}'
+        {% if action.target %}
+          target='{{ action.target }}'
+        {% endif %}
+      >
+        {{ action.label }}
+      </a>
+    {% endfor %}
+  </div>
+</header>

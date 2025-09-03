@@ -1,9 +1,15 @@
 {% extends 'src/templates/layouts/base.twig' %}
+{% set currentPage = 'Home' %}
+{% block title %}Binabox Homepage{% endblock %}
+{% set body_class = 'homepage' %}
 
-{% from 'src/templates/partials/ui/icon.twig' import icon %}
+{% block description %}{{ pages.index.description }}{% endblock %}
 
 {% block content %}
-  <h1>{{ index.title }}</h1>
-
-  {% include 'src/templates/partials/welcome-section.twig' %}
+  {% include 'src/templates/partials/home-banner.twig' %}
+  {% include 'src/templates/partials/home-catalog.twig' %}
+  {% include 'src/templates/partials/home-about.twig' %}
+  {% include 'src/templates/partials/home-blog.twig' %}
+  {% include 'src/templates/partials/home-team.twig' %}
+  {% include 'src/templates/partials/home-faq.twig' %}
 {% endblock %}

@@ -1,0 +1,17 @@
+<section class='faq'>
+  <h2 class='faq__title faq__title--md'>{{ faq.title }}</h2>
+
+  {% for item in faq.items %}
+    <details
+      class='faq__item'
+      {% if loop.first %}
+        open
+      {% endif %}
+    >
+      <summary class='faq__question'>{{ item.question }}</summary>
+      <p class='faq__answer'>
+        {{ item.answer | raw }}
+      </p>
+    </details>
+  {% endfor %}
+</section>
