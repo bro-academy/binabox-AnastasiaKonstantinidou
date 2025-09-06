@@ -1,0 +1,26 @@
+$faq-title-size: $font-size-xxlarge;
+$faq-question-size: $font-size-xlarge;
+$faq-answer-size: $font-size-medium;
+
+.faq {
+  max-width: 900px;
+  padding: 20px;
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $faq-title-size;
+    color: $color-text;
+  }
+
+  &__question {
+    font-size: $faq-question-size;
+    font-weight: 400;
+    color: $color-text;
+  }
+
+  &__answer {
+    font-size: $faq-answer-size;
+    line-height: 24px;
+    color: $color-text;
+  }
+}

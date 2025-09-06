@@ -1,0 +1,48 @@
+// Local variables
+$about-title-size: $font-size-xxlarge;
+$about-intro-size: $font-size-large;
+$feature-title-size: $font-size-xlarge;
+$feature-text-size: $font-size-medium;
+
+.about {
+  &__title {
+    font-family: $font-heading;
+    font-size: $about-title-size;
+    color: $color-text;
+  }
+
+  &__intro {
+    font-weight: 500;
+    font-size: $about-intro-size;
+    line-height: 28px;
+    color: $color-light;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.feature {
+  &__title {
+    font-size: $feature-title-size;
+    font-weight: 400;
+    color: $color-text;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: $feature-text-size;
+    line-height: 28px;
+    color: $color-light;
+  }
+
+  &__number {
+    font-size: 64px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px $color-primary;
+    opacity: 0.4;
+  }
+}

@@ -1,0 +1,36 @@
+$footer-tagline-size: $font-size-small;
+$footer-nav-link-size: $font-size-small;
+$footer-copyright-size: $font-size-small;
+
+.footer {
+  background-color: $color-dark-alt;
+  padding: 20px;
+
+  &__tagline {
+    font-size: $footer-tagline-size;
+    color: $color-text;
+    text-align: center;
+  }
+
+  &__nav {
+    text-align: right;
+
+    &-link {
+      font-weight: 600;
+      font-size: $footer-nav-link-size;
+      color: $color-text;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-accent;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: $footer-copyright-size;
+    color: $color-text;
+    text-align: center;
+  }
+}

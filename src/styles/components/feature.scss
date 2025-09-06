@@ -1,0 +1,19 @@
+.feature {
+  &__title {
+    font-size: $font-size-xlarge;
+  }
+
+  &__text {
+    font-size: $font-size-large;
+    color: $color-muted;
+    text-align: center;
+  }
+
+  &__number {
+    font-size: 64px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px $color-primary;
+    opacity: 0.4;
+  }
+}

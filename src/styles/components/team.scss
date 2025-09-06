@@ -1,0 +1,35 @@
+$team-title-size: $font-size-xxlarge;
+$member-name-size: $font-size-xlarge;
+$member-role-size: $font-size-medium;
+
+.team {
+  &__title {
+    font-family: $font-heading;
+    font-size: $team-title-size;
+    color: $color-text;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.member {
+  &__name {
+    font-size: $member-name-size;
+    font-weight: 400;
+    color: $color-text;
+  }
+
+  &__role {
+    font-size: $member-role-size;
+    font-weight: 400;
+    color: $color-light;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,12 @@
+.homepage {
+  font-family: $font-base;
+  font-size: $font-size-small;
+  background-color: $color-dark;
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(2 101 220 / 0.4) 0%,
+    rgba(2 101 220 / 0) 70%
+  );
+  background-repeat: no-repeat;
+  background-size: 600px 600px;
+}

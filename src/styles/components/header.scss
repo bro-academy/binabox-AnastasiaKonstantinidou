@@ -1,0 +1,35 @@
+.header {
+  background-color: $color-dark;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    transform: translateX(-20px);
+  }
+
+  &__link {
+    color: $color-text;
+    font-weight: 600;
+    font-size: $font-size-medium;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $color-primary;
+    }
+
+    &--active {
+      text-decoration: underline;
+      text-decoration-color: $color-primary;
+    }
+  }
+
+  &__actions {
+    @include flex-center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: $font-size-large;
+  }
+}

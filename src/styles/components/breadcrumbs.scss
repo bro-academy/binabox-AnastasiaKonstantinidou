@@ -1,0 +1,44 @@
+.breadcrumbs {
+  padding: 20px 32px;
+  color: $color-text;
+  @include flex-center;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: 600;
+  }
+
+  &__item {
+    display: inline;
+
+    &::after {
+      content: " / ";
+      color: rgb(136 136 136);
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(170 170 170);
+    }
+  }
+}

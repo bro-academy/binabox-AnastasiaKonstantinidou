@@ -1,0 +1,21 @@
+// Flexbox centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Button mixin
+@mixin button($bg, $color, $border) {
+  background-color: $bg;
+  color: $color;
+  border: 2px solid $border;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+}

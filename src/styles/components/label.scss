@@ -1,0 +1,17 @@
+.label {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 8px 10px;
+  white-space: nowrap;
+
+  &--primary {
+    background-color: $color-text;
+    color: $color-primary;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-text;
+  }
+}

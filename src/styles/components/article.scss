@@ -1,0 +1,40 @@
+.article {
+  &__title {
+    font-size: $font-size-xxlarge;
+    color: $color-text;
+
+    &--md {
+      font-size: $font-size-xxlarge;
+    }
+
+    &--sm {
+      font-size: $font-size-xlarge;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-large;
+    color: $color-text;
+
+    &--no-bullets {
+      list-style: none;
+    }
+  }
+
+  &__blockquote {
+    background-color: rgb(0 39 84);
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  &__tag {
+    border: 2px solid rgb(208 215 251 / 0.17);
+    color: $color-text;
+    padding: 6px 12px;
+    font-weight: 600;
+
+    &:hover {
+      border: 2px solid $color-text;
+    }
+  }
+}
