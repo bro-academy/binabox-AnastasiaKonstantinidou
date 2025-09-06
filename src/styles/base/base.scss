@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #0265dc;
+  --color-accent: #377dff;
+}
+
+body {
+  font-family: $font-base;
+  font-size: $font-size-small;
+  background-color: $color-dark;
+  color: $color-text;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

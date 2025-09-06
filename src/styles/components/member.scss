@@ -1,0 +1,14 @@
+.member {
+  &__name {
+    font-size: $font-size-xlarge;
+  }
+
+  &__role {
+    font-size: $font-size-large;
+    color: $color-muted;
+  }
+
+  &__socials {
+    font-size: 0;
+  }
+}

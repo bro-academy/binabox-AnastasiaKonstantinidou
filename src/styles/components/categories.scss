@@ -1,0 +1,27 @@
+.categories {
+  background-color: rgb(29 28 40);
+  color: $color-text;
+  padding: 24px;
+  width: 328px;
+
+  &__title {
+    font-size: $font-size-xlarge;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  &__link {
+    color: $color-text;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $color-primary;
+    }
+  }
+}

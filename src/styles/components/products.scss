@@ -1,0 +1,55 @@
+// Local variables for Products
+$products-title-size: $font-size-xlarge;
+$product-subtitle-size: $font-size-large;
+$product-price-size: $font-size-xxlarge;
+
+.products {
+  padding: 40px 30px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $products-title-size;
+    color: $color-text;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 8px;
+
+    &--highlight {
+      background-color: $color-primary;
+      color: $color-dark;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    width: 100%;
+    display: block;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: $product-subtitle-size;
+    line-height: 28px;
+    color: $color-light;
+  }
+
+  &__price {
+    color: $color-text;
+    font-size: $product-price-size;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+  }
+}

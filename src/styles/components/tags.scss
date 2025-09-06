@@ -1,0 +1,22 @@
+.tags {
+  background-color: rgb(29 28 40);
+  color: $color-text;
+  padding: 24px;
+  width: 328px;
+
+  &__title {
+    font-size: $font-size-xlarge;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+  }
+
+  &__button--small {
+    font-size: $font-size-small;
+    line-height: 20px;
+  }
+}

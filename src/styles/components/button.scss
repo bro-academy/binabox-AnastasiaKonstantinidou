@@ -1,0 +1,40 @@
+.button {
+  @include button(transparent, $color-text, transparent);
+
+  &--primary {
+    @include button($color-primary, $color-text, transparent);
+
+    &:hover {
+      background-color: transparent;
+      border-color: $color-primary;
+    }
+  }
+
+  &--secondary {
+    @include button(transparent, $color-text, rgba(208 215 251 / 0.17));
+
+    &:hover {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  &--large {
+    font-size: $font-size-medium;
+    line-height: 24px;
+    padding: 10px 20px;
+  }
+
+  &--xl {
+    font-size: $font-size-large;
+    line-height: 28px;
+    padding: 12px 28px;
+  }
+
+  &--small {
+    font-size: $font-size-small;
+    line-height: 20px;
+    width: 134px;
+    height: 48px;
+  }
+}
